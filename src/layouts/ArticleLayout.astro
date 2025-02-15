@@ -1,0 +1,36 @@
+---
+import '../styles/global.css'
+import Prose from '../components/Prose.astro';
+const { frontmatter } = Astro.props;
+---
+<html lang="en" class="overflow-hidden h-full">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <style>
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;  
+            scrollbar-width: none;
+        }
+    </style>
+    </head>
+    <body class="bg-[url('../assets/images/article-background.jpg')] bg-cover bg-center bg-no-repeat bg-fixed overflow-auto h-full no-scrollbar">
+        <a href="/" class="block">
+            <h1 class="my-4 text-4xl mt-8 text-center whitespace-nowrap text-white font-mono">
+              seagram.dev
+            </h1>
+        </a>
+        <div class="flex justify-center items-center min-h-screen">
+            <div class="relative rounded-lg  bg-black/20 my-4 overflow-y-auto max-h-full no-scrollbar p-4 pt-8 pb-8">
+                <h1 class="text-2xl font-bold mb-2 text-white font-mono text-center">{frontmatter.title}</h1>
+                <p class="mb-4 text-lg text-white font-mono text-center">{frontmatter.date}</p>
+                <Prose>
+                    <slot />
+                </Prose>
+            </div>
+        </div>
+    </body>
+</html>

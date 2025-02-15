@@ -1,0 +1,52 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+.terraform.tfstate.lock.info
+.terraformrc
+terraform.rc
+*.tfstate.backup
+.terraform/
+*/.terraform.lock.hcl
+
+# Logs
+*.log
+crash.log
+crash.*.log
+logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node.js
+node_modules
+dist
+dist-ssr
+
+# Local environment
+*.local
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+
+# Terraform overrides
+override.tf
+override.tf.json
+*_override.tf
+
+# Sensitive files
+*.pem
+*.bak
+*.tfvars
+*.tfvars.json
+
+# Miscellaneous
+todo.md
+.astro

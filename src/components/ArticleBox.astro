@@ -1,0 +1,26 @@
+---
+import "../styles/global.css"
+const articles = Object.values(import.meta.glob('../pages/posts/*.md', {eager:true}))
+---
+<div class="m-auto p-4 rounded-lg bg-black/20 text-white font-mono max-w-max">
+  <ul class="sm:block max-h-[30vh] sm:max-h-full overflow-y-auto">
+    {articles.map((post: any) => (
+      <li class="text-center p-2"><a href={post.url} class="hover:underline sm:text-base text-sm">{post.frontmatter.title}</a></li>
+    ))}
+  </ul>
+</div>
+
+<style>
+  ul::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ul::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ul::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+  }
+</style>
