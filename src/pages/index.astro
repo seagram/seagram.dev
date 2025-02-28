@@ -1,9 +1,9 @@
 ---
-import InfoBox from "../components/InfoBox.astro"
-import ArticleBox from "../components/ArticleBox.astro"
-import IconLinks from "../components/IconLinks.astro"
-import TitleText from "../components/TitleText.astro"
-import ArticleText from "../components/ArticleText.astro"
+import InfoBox from "../components/InfoBox.astro";
+import ArticleBox from "../components/ArticleBox.astro";
+import IconLinks from "../components/IconLinks.astro";
+import TitleText from "../components/TitleText.astro";
+import ArticleText from "../components/ArticleText.astro";
 ---
 
 <html lang="en">
@@ -11,14 +11,16 @@ import ArticleText from "../components/ArticleText.astro"
     <meta charset="utf-8" />
     <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> TODO -->
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} >
+    <meta name="generator" content={Astro.generator} />
     <title>seagram.dev</title>
   </head>
-  <body class="bg-[url('../assets/images/art.jpg')] bg-cover bg-center bg-no-repeat h-screen overflow-hidden m-0">
-    <TitleText/>
-    <InfoBox/>
-    <ArticleText/>
-    <ArticleBox/>
-    <IconLinks/>
+  <body
+    class="bg-[url('../assets/images/art.jpg')] bg-cover bg-center bg-no-repeat h-screen overflow-hidden m-0"
+  >
+    <TitleText />
+    <InfoBox />
+    <ArticleText />
+    <ArticleBox />
+    <IconLinks />
   </body>
 </html>
