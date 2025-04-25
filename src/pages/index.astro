@@ -8,14 +8,16 @@ import HeaderText from "../components/HeaderText.astro";
 import SubHeaderText from "../components/SubHeaderText.astro";
 import LanguageIcons from "../components/LanguageIcons.astro";
 import SystemIcons from "../components/SystemIcons.astro";
+import { ClientRouter } from "astro:transitions";
 ---
 
-<html lang="en" class="bg-orange-100">
+<html lang="en" class="bg-orange-100" transition:animate="fade">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>seagram.dev</title>
+    <ClientRouter />
   </head>
   <body class="bg-[url(../assets/images/noise.svg)] mb-16">
     <TitleText text="cal seagram" />
