@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/ArticleLayout.astro
-title: "The Art of Denim: Shuttle vs. Projectile Looms"
+title: "a comparison of shuttle and projectile looms"
 date: 5/24/2024
 ---
 
@@ -15,6 +15,8 @@ through. Over time, as civilizations evolved, new loom designs emerged.
 Among these were the treadle loom and the drawloom, ancestors of the
 advanced looms we recognize today.
 
+#
+
 The treadle loom, deriving its name from the Spanish word for "pedal,"
 marked a revolutionary step forward in weaving after the Spanish
 conquest in 1521. By allowing weavers to control warp threads with foot
@@ -24,6 +26,8 @@ discovered. However, the prevailing theories speculate it originated as
 a silk-weaving loom in Asia. However, despite these advancements, one
 process continued to slow the evolution of the loom: the picking
 mechanism.
+
+#
 
 While shredding and battening could be adapted for automation, picking
 required a level of speed and precision that early looms struggled to
@@ -37,6 +41,8 @@ to weave wider fabrics. Edmund Cartwright brought forth the first power
 loom in 1784 but it wasn’t until the Lancashire loom of 1841, did such
 technology become economically feasible.
 
+#
+
 The true leap, however, came with the fully automatic shuttle loom
 developed by the Draper Corporation in 1895. Known as the "Northrop"
 loom, this machine automated all three core aspects of weaving, freeing
@@ -45,6 +51,8 @@ reloading autonomously. Draper refined this design with the lighter
 E-model in 1909, and by 1914, nearly 40% of American looms were Northrop
 looms. This machine revolutionized the textile industry, embedding
 shuttle looms firmly in weaving history.
+
+#
 
 The development of weaving technology continued into the 1940s with the
 Sulzer Brothers in Switzerland, who introduced the projectile loom.
@@ -58,6 +66,8 @@ than looping it back. This design difference results in a fabric that
 lacks the "self-edge" or "selvedge" finish produced by shuttle looms,
 making the fabric prone to unraveling at the edges.
 
+#
+
 Despite the economical advantages of projectile looms, the shuttle looms
 remain a treasured tool, particularly for high-quality textiles. The
 selvedge seam created by shuttle looms is durable edge that resists
@@ -68,6 +78,8 @@ manufacturers like Naked and Famous and Iron Heart, still rely on
 shuttle looms to produce their premium denim jeans and jackets. These
 selvedge edges are not just markers of quality but are symbols of
 meticulous care and craftsmanship in an era of mass production.
+
+#
 
 The resurgence of interest in selvedge denim is a testament to
 traditional weaving methods. While projectile looms enable mass

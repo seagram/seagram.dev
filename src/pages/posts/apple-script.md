@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/ArticleLayout.astro
-title: "AppleScript: A Cautionary Tale of Syntax Design"
+title: "the anatomy of applescript syntax"
 date: 18/09/2024
 ---
 
@@ -23,7 +23,7 @@ would contain the necessary libraries for scripting and window
 management tasks. However, Swift’s remains limited in its scripting
 tooling for macOS operations.
 
-## History
+## history
 
 To understand AppleScript's history, I’d refer to a fantastic paper by
 William Cook from the University of Texas at Austin which thoroughly
@@ -44,7 +44,7 @@ application behaviour. Though ambitious, AppleScript’s implementation
 ultimately fell very short because it prioritized readability over
 extensibility.
 
-## The Syntax
+## syntax
 
 For reference, here is AppleScript’s grammar:
 
@@ -87,7 +87,7 @@ utterly ambiguous when referencing objects not typically personified.
 These syntax choices, intended to improve legibility, ultimately impede
 the language's potential.
 
-## A Comparison
+## comparison
 
 To illustrate, let’s consider a simple task: prompting a user to select
 a directory, then renaming all files in that directory by prefixing them
@@ -156,7 +156,7 @@ extensive scripts with AppleScript is impractical, as the language’s
 design turns what should be straightforward tasks into overly
 complicated problems.
 
-## Readability vs. Abstraction
+## readability vs. abstraction
 
 AppleScript is no doubt a cautionary tale about the purpose of
 programming languages: they serve as layers of abstraction. A language's

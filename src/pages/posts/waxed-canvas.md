@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/ArticleLayout.astro
-title: "The History of Waxed Canvas"
+title: "the history of waxed canvas"
 date: 08/27/2024
 ---
 
@@ -17,6 +17,8 @@ moisture of the sea. As the Vikings expanded their trade routes, they
 gained access to flax-producing regions in Western Europe and the
 Mediterranean. Thus, the linen sailcloth revolution emerged.
 
+#
+
 Sailors turned to flax canvas, made from a linen warp and weft, as it
 was lighter compared to its woolen counterpart. By the 15th century,
 sailors faced relentless challenges from the elements. Heavy rains
@@ -28,6 +30,8 @@ them, creating a thin, water-resistant coating. Mariners of the northern
 British waters preferred treating their sailcloths with linseed oil,
 which greatly enhanced their water resistance.
 
+#
+
 Despite the ongoing evolution of sailcloths—eventually incorporating
 cotton, hemp, nylon, and even carbon fibers—waxed cotton remains iconic
 within workwear and heritage wear, thanks in large part to these early
@@ -36,6 +40,8 @@ to be woven on a single loom, so smaller pieces were stitched together.
 Off-cuts from this process were fashioned into smocks for sailors.
 Water-resistant and durable, these garments became indispensable for
 workers braving the cold and wet.
+
+#
 
 Fast forward to the 1700s, when Scottish weaver Francis Webster
 introduced the ingenious idea of impregnating canvas with paraffin wax
@@ -47,9 +53,9 @@ military with waterproof clothing. Its widespread adoption over time
 stands as a testament to its utility and durability, despite its
 simplicity.
 
-## Notable Garments
+## notable garments
 
-### Filson Tin Cloth Cruiser
+### filson tin cloth cruiser
 
 The Great Klondike Gold Rush of 1897 saw thousands of hopeful souls pass
 through Seattle en route to the north. C.C. Filson recognized an
@@ -60,6 +66,8 @@ named Robert McFadden commissioned Filson to create the first cruiser
 shirt—a work shirt featuring four pockets on the front and a single
 pocket on the back. Years later, in 1912, Filson patented this design as
 the "Wool Cruiser Shirt."
+
+#
 
 By 1920, Filson began importing English "tin cloth" (waxed cotton
 fabric) from British Millerain and introduced their first "waterproofed
@@ -76,7 +84,7 @@ garments due to its timeless appeal and practical utility.
 
 ![Filson Tin Cloth Cruiser Jacket](../../assets/images/filson.png)
 
-### Barbour Bedale
+### barbour bedale
 
 Founded in 1894 in South Shields, England, Barbour began as J. Barbour &
 Sons, producing suits for nearly every British International motorcycle
@@ -84,6 +92,8 @@ team from 1936 to 1977. It was Duncan Barbour, the third generation of
 the family and an avid motorcyclist, who introduced the one-piece
 waxed-cotton Barbour International suit. This innovation led Barbour to
 expand into manufacturing waxed cotton jackets for the public.
+
+#
 
 In 1980, Barbour unveiled the Bedale, a lightweight, thornproof short
 riding jacket designed by Dame Margaret, the Chairwoman of J. Barbour &
@@ -98,6 +108,8 @@ the top layer of fibers are sheared, creating a slubby, neppy texture.
 It provides a soft finish for the pockets with an added benefit of
 warmth.
 
+#
+
 The Bedale also features a removable hood, which can be exchanged for
 other Barbour hoods with various linings depending on the climate. A key
 distinction between the Bedale and the Classic Bedale lies in their
@@ -111,7 +123,7 @@ Barbour's collection, maintaining a blend of practicality and elegance.
 
 ![Barbour Bedale Jacket](../../assets/images/barbour.webp)
 
-## Conclusion
+## conclusion
 
 While the origins of waxed canvas (interchangeably, waxed cotton) date
 back to many a century ago, its perpetual resiliency has stood the tests

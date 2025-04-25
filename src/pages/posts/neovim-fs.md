@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/ArticleLayout.astro
-title: "Exploring Neovim Configuration File Structures"
+title: "neovim configuration file structures"
 date: 08/17/2024
 ---
 
@@ -10,6 +10,8 @@ integrated AI features, such as Cursor, Void, and the controversial
 PearAI. Despite these advancements, many developers remain loyal to a
 more classic tool: Neovim. A fork of Vim, Neovim is beloved for its high
 extensibility and deep customizability.
+
+#
 
 By default, Neovim is a minimalist TUI (Text User Interface) editor with
 practical upgrades over Vim, including built-in Language Server Protocol
@@ -21,7 +23,7 @@ brought forth more customization and extensibility. Today, we'll explore
 the primary configuration file structures for a Lua-based Neovim
 configuration.
 
-## The Single File
+## the single file
 
 The simplest and default way to configure Neovim is with a single Lua
 file located at `~/.config/nvim/init.lua`. This setup is
@@ -31,13 +33,15 @@ defined and configured, making it simple to maintain for lightweight
 setups. However, as complexity grows, this approach can devolve into an
 unwieldy, cluttered mess of code.
 
+#
+
 A single-file configuration works well for beginners looking to get a
 feel for Neovim at its most basic configuration syntax. However, more
 advanced users are better off using a modular configuration, which
 involves splitting configurations into multiple files based on function
 or category to streamline organization and maintainability.
 
-## Modular Configuration
+## modular configuration
 
 A modular approach organizes settings, key mappings, and plugin
 configurations into separate files. This involves creating a directory
@@ -45,7 +49,7 @@ structure within the
 `nvim` folder, typically breaking down configurations by
 their plugin group.
 
-### Example Structure
+### example structure
 
 ```
 ~/.config/nvim/
@@ -71,19 +75,21 @@ Each file within this structure has a unique purpose:
   configurations, further divided into directories by function (e.g.,
   `lsp` for LSP-specific plugins).
 
+#
+
 This approach offers vastly improved readability and ease of
 maintenance, particularly as the number of plugins increases. It allows
 for updating a specific part of the configuration without needing to
 comb through a single lengthy file.
 
-## Advanced Modular Configuration
+## advanced modular configuration
 
 For further clarity, one can categorize plugins and settings into
 separate directories for different areas of development. This allows for
 specific workflows comprised of groups of plugins or settings, as
 needed.
 
-### Example Structure
+### example structure
 
 ```
 ~/.config/nvim/
@@ -115,7 +121,7 @@ This approach adds an additional layer of abstraction:
 This setup is ideal for developers who work with multiple languages,
 frameworks or projects.
 
-## Plugin Management
+## plugin management
 
 Plugin managers offer both a declarative and interactive system to
 configuring plugins. Take for example, LazyVim, a plugin manager that
@@ -124,7 +130,7 @@ reduces startup time dramatically. LazyVim operates with a modular
 plugin configuration system, where you add, update, and maintain plugins
 within your Neovim configuration structure.
 
-## Conclusion
+## conclusion
 
 Configuring Neovim can range from minimal setups with a single
 `init.lua` file to highly modular, optimized configurations

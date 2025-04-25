@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/ArticleLayout.astro
-title: "FoxFibre: A Revolution in Cotton"
+title: "foxfibre has revolutionized cotton"
 date: 12/04/2024
 ---
 
@@ -14,6 +14,8 @@ unassumingly special release: the All Natural FoxFibre Selvedge. This
 FoxFibre, a fabric rarely discussed in the denim world despite its
 revolutionary nature and history.
 
+#
+
 Born in 1955 in Woodside, California, Sally Fox grew up as one of eight
 children in her household. At the age of 12, she bought her first
 spindle with money earned from babysitting, marking the start of a soon
@@ -25,6 +27,8 @@ witnessing firsthand the damage caused by pesticides. Astonished by the
 harm she witnessed, she returned to California and earned her Master’s
 degree in pest management from the University of California.
 
+#
+
 Upon graduation, Sally began working as a pollinator for a cotton
 breeder in California. She started breeding pest-resistant cotton, and
 during this time, she came across a bag of seeds that produced naturally
@@ -34,6 +38,8 @@ species of naturally coloured cotton that could be spun on industrial
 machinery. This was nothing short of a groundbreaking achievement. Her
 cotton, reminiscent of heirloom varieties cultivated over 4,000 years
 ago in South America, grew in shades of brown, yellow, blue, and green.
+
+#
 
 Sally continued to perfect her cotton by crossbreeding it with
 long-staple and Pima cotton, attempting to retain its pest resistance
@@ -48,6 +54,8 @@ mainstream attention, and her company began supplying major brands like
 L.L. Bean and Land’s End, with her company quickly reaching a valuation
 of over $10 million.
 
+#
+
 Sally’s success certainly didn’t develop without major setbacks.
 Neighbouring cotton farmers in California feared that Sally’s distinct
 cotton could cross-contaminate their crops, leading them to lobby for
@@ -58,7 +66,7 @@ Northern California. Without a doubt, her resilience throughout this
 process is a testament to her unwavering commitment to sustainable
 innovation.
 
-## The FoxFibre Revolution
+## the foxfibre revolution
 
 Traditionally, coloured cotton comprises of short, fragile fibres that
 have to be hand-spun. This led textile manufacturers to favor bleached
@@ -69,6 +77,8 @@ causing reproductive and neurological health issues to aquatic species.
 Conventional cotton also relies heavily on GMO seeds, vast amounts of
 water, and both herbicides and pesticides.
 
+#
+
 FoxFibre revolutionized the textile industry by introducing a cotton
 that is naturally pest and disease resistant, requiring far less water
 and eliminating the need for any bleaching or dyeing. It is inherently
@@ -76,6 +86,8 @@ stronger, more durable, and even more fire-resistant than conventional
 cotton. FoxFibre bypasses every harmful step of the traditional
 cotton-growing process, offering a superior and environmentally friendly
 alternative to traditional cotton methods.
+
+#
 
 Recently, FoxFibre has experienced a resurgence, reminiscent of its
 rapid success of the 1990s. Despite the newfound popularity, Sally Fox

@@ -1,3 +1,6 @@
 @import "tailwindcss";
 @plugin '@tailwindcss/typography';
-@import "tailwindcss-animated";
+@theme {
+  --font-sans: "Special Elite", "monospaced";
+  --font-cutive: "Cutive", "Georgia";
+}

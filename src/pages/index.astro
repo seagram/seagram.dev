@@ -1,26 +1,31 @@
 ---
+import "@fontsource/special-elite";
 import InfoBox from "../components/InfoBox.astro";
 import ArticleBox from "../components/ArticleBox.astro";
-import IconLinks from "../components/IconLinks.astro";
+import LinkIcons from "../components/LinkIcons.astro";
 import TitleText from "../components/TitleText.astro";
-import ArticleText from "../components/ArticleText.astro";
+import HeaderText from "../components/HeaderText.astro";
+import SubHeaderText from "../components/SubHeaderText.astro";
+import LanguageIcons from "../components/LanguageIcons.astro";
+import SystemIcons from "../components/SystemIcons.astro";
 ---
 
-<html lang="en">
+<html lang="en" class="bg-orange-100">
   <head>
     <meta charset="utf-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> TODO -->
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>seagram.dev</title>
   </head>
-  <body
-    class="bg-[url('../assets/images/art.jpg')] bg-cover bg-center bg-no-repeat h-screen overflow-hidden m-0"
-  >
-    <TitleText />
+  <body class="bg-[url(../assets/images/noise.svg)] mb-16">
+    <TitleText text="cal seagram" />
     <InfoBox />
-    <ArticleText />
+    <SubHeaderText text="languages" />
+    <LanguageIcons />
+    <SubHeaderText text="systems" />
+    <SystemIcons />
+    <HeaderText text="articles" />
     <ArticleBox />
-    <IconLinks />
+    <LinkIcons />
   </body>
 </html>

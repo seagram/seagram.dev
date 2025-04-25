@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/ArticleLayout.astro
-title: "Optimizing Hypertrophy with Lengthened Partials"
+title: "optimizing hypertrophy with lengthened partials"
 date: 11/09/2024
 ---
 
@@ -18,6 +18,8 @@ competition trained hours upon hours a day, everyday of the week. While
 subsequent research in recent years has challenged some of Mentzer's
 approach, his scientific methodology laid the groundwork for the
 "optimal training" philosophy.
+
+#
 
 Since Mentzer’s time, research in hypertrophy training has exploded,
 unveiling new techniques to maximize muscle growth. Recently, a study
@@ -39,7 +41,7 @@ movement results in a greater increase of muscle mass than the
 yet to undergo any rigorous testing in a real-world setting until
 Nippard’s study.
 
-## Background
+## background
 
 Nippard, alongside researchers from the Applied Muscle Development
 Laboratory at CUNY Lehman College, aimed to determine what constitutes
@@ -47,6 +49,8 @@ an optimal technique for hypertrophy. Emphasizing the value of full ROM
 and repetition tempos within a 2–8 second range, they proposed that
 longer muscle lengths during partial ROM may be superior for
 hypertrophy.
+
+#
 
 However, optimal RT technique is not universally defined, as one’s
 individual goals influence what is considered "proper form." For
@@ -60,7 +64,7 @@ adjustments. While these variable may differ between participants of the
 study, they recommended a focus on maintaining eccentric phase control
 and full ROM to maximize hypertrophic outcomes.
 
-## Repetition Tempo and Eccentric Control
+## repetition tempo and eccentric control
 
 The study investigated repetition tempo, an often controversial topic
 within science-based lifting. While slower eccentric tempos are widely
@@ -72,7 +76,7 @@ literature remains inconclusive on an “optimal” tempo. As a result, it
 was found that an emphasis on eccentric control rather than a strict
 duration is more optimal for enhancing muscle stimulation.
 
-## Range of Motion and Muscle Lengths
+## range of motion and muscle lengths
 
 The most significant finding was the role of ROM in hypertrophy.
 Traditional evidence suggested that full ROM was optimal, but the study
@@ -84,7 +88,7 @@ hypertrophic gains in muscles like the quadriceps, hamstrings, and
 gastrocnemius. This finding reinforces the effectiveness of lengthened
 partials, particularly when paired with a controlled eccentric ROM.
 
-## Kinematics
+## kinematics
 
 The final aspect of optimal technique that was studied involves
 exercise-specific kinematics. Namely, how one’s body positioning and
@@ -100,17 +104,14 @@ enabling a heavier stimulus. However, Nippard ultimately recommends
 minimizing any involvement of ancillary muscles while performing a
 movement.
 
-## Conclusion
+## conclusion
 
-In accordance with his findings, Nippard recommends, in order to
-maximize muscle growth:
+Nippard's findings recommend lifters to conduct a ROM that emphasizes
+the lengthened portion of the movement, using a repetition tempo between
+2 and 8 seconds while prioritizing a controlled eccentric. One should adhere
+to general kinematic guidelines, specifically in body positioning and movement patterns.
 
-1.  Conducting a ROM that emphasizes the lengthened portion of the
-    movement,
-2.  Using a repetition tempo between 2 and 8 seconds while prioritizing a
-    controlled eccentric,
-3.  Adhering to general kinematic guidelines, specifically in body
-    positioning and movement patterns.
+#
 
 While the bodybuilding world has certainly changed, it's enlightening to
 see that traditional training principles have a proven scientific
