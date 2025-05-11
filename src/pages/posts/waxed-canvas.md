@@ -3,7 +3,8 @@ layout: ../../layouts/ArticleLayout.astro
 title: "the history of waxed canvas"
 date: 08/27/2024
 ---
- ![Oil Painting of a Sailboat](../../assets/images/sailboat.jpg)
+
+![Oil Painting of a Sailboat](../../assets/images/sailboat.jpg)
 
 In the late 11th century, Viking longships used wool for their sailcloths. These sailcloths were meticulously woven by hand using an upright warp-weighted loom. Depending on the ship's locality, one of three methods was employed for weaving the wool: two-shaft (also referred to as plain weave), three-shaft (2/1 twill), or four-shaft (2/2 twill). Here, 2/1 and 2/2 refer to the number of threads passing over and under. However, the wool would often suffer damage from the residual moisture of the sea. As the Vikings expanded their trade routes, they gained access to flax-producing regions in Western Europe and the Mediterranean. Thus, the linen sailcloth revolution emerged.
 
@@ -13,9 +14,9 @@ Despite the ongoing evolution of sailcloths—eventually incorporating cotton, h
 
 Fast forward to the 1700s, when Scottish weaver Francis Webster introduced the ingenious idea of impregnating canvas with paraffin wax rather than applying linseed oil to the surface. The result was a more breathable and flexible canvas that maintained the same standard of water resistance. Waxed canvas quickly gained popularity, particularly with the British Armed Forces during WWII, making Britain the only military with waterproof clothing. Its widespread adoption over time stands as a testament to its utility and durability, despite its simplicity.
 
-notable garments
+# notable garments
 
- filson tin cloth cruiser
+## filson tin cloth cruiser
 
 The Great Klondike Gold Rush of 1897 saw thousands of hopeful souls pass through Seattle en route to the north. C.C. Filson recognized an opportunity and founded C.C. Filson's Pioneer Alaska Clothing and Blanket Manufacturers. Its purpose was to produce the garments that prospectors would wear while mining for gold. A year later, a prospector named Robert McFadden commissioned Filson to create the first cruiser shirt—a work shirt featuring four pockets on the front and a single pocket on the back. Years later, in 1912, Filson patented this design as the "Wool Cruiser Shirt."
 
@@ -23,7 +24,7 @@ By 1920, Filson began importing English "tin cloth" (waxed cotton fabric) from B
 
 ![Filson Tin Cloth Cruiser Jacket](../../assets/images/filson.png)
 
- barbour bedale
+## barbour bedale
 
 Founded in 1894 in South Shields, England, Barbour began as J. Barbour & Sons, producing suits for nearly every British International motorcycle team from 1936 to 1977. It was Duncan Barbour, the third generation of the family and an avid motorcyclist, who introduced the one-piece waxed-cotton Barbour International suit. This innovation led Barbour to expand into manufacturing waxed cotton jackets for the public.
 
@@ -33,6 +34,6 @@ The Bedale also features a removable hood, which can be exchanged for other Barb
 
 ![Barbour Bedale Jacket](../../assets/images/barbour.webp)
 
-conclusion
+# conclusion
 
-While the origins of waxed canvas (interchangeably, waxed cotton) date back to many a century ago, its perpetual resiliency has stood the tests of time. Many manufacturers such as Thursday Boot Company and Flint & Tinder have recruited waxed canvas for their garments in recent years to a great success. The origins of waxed canvas (or waxed cotton) date back centuries, yet its enduring resilience has withstood the test of time. Many contemporary brands, such as Thursday Boot Company and Flint & Tinder, have embraced waxed canvas in recent years, with great success. Waxed canvas remains a pinnacle testament to nature’s ability to provide solutions to mankind's needs in the simplest ways. 
+While the origins of waxed canvas (interchangeably, waxed cotton) date back to many a century ago, its perpetual resiliency has stood the tests of time. Many manufacturers such as Thursday Boot Company and Flint & Tinder have recruited waxed canvas for their garments in recent years to a great success. The origins of waxed canvas (or waxed cotton) date back centuries, yet its enduring resilience has withstood the test of time. Many contemporary brands, such as Thursday Boot Company and Flint & Tinder, have embraced waxed canvas in recent years, with great success. Waxed canvas remains a pinnacle testament to nature’s ability to provide solutions to mankind's needs in the simplest ways.

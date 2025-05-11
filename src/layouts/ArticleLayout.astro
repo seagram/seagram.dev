@@ -14,12 +14,12 @@ const { frontmatter } = Astro.props;
     <ClientRouter />
   </head>
   <body>
-    <article class="mx-auto max-w-3xl my-10">
+    <article class="mx-auto max-w-3xl my-10 px-6 sm:px-0">
       <header class="text-center">
-        <h1 class="sm:text-3xl lg:text-4xl mb-2">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl mb-2">
           {frontmatter.title}
         </h1>
-        <p class="text-xl mb-4">
+        <p class="text-lg sm:text-xl mb-4">
           {frontmatter.date}
         </p>
       </header>
