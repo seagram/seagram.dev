@@ -2,8 +2,10 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "how nixon smuggled drugs for louis armstrong"
 date: 06/07/2024
+order: 5
 ---
- ![Louis Armstrong Smoking](../../assets/images/louis-armstrong.png)
+
+![Louis Armstrong Smoking](../../assets/images/louis-armstrong.png)
 
 Jazz has lived both eras of supreme popularity and stretches of decline, but one thing remains constant: Louis Armstrong, "Satchmo," continues to reign in the hearts of music lovers everywhere. Armstrong’s face is a familiar sight, and his voice even more so, captivating hearts over 50 years since his passing. This immense fame undoubtedly brought considerable pressure and Armstrong expressed later in his life that he turned to marijuana as a means of easing his stressors. By the mid-1920s, he had taken up smoking, and in 1930, he was arrested for possession of marijuana.
 
@@ -17,4 +19,4 @@ In another version, jazz legend Miles Davis shared a story he had heard from Tom
 
 A third version of the story places Armstrong returning from Ghana, where he supposedly had a trumpet case filled with marijuana. On this occasion, Nixon greeted Armstrong at Dulles Airport, again offering assistance. Armstrong requested Nixon carry his case through customs and Nixon unwittingly obliged. Although some sources suggest this version of the story may have occurred instead on a return flight from London to New York.
 
-Despite the blurry recounts and undefined truths, each story shares a common thread: Armstrong was adored by all. Everyone loved Louis, from the working middle class watching his shows at night to those in the White House lucky enough to see him live. With such an adoration and in a time when fame held sway, who could resist doing a favor for "Satchmo" himself? 
+Despite the blurry recounts and undefined truths, each story shares a common thread: Armstrong was adored by all. Everyone loved Louis, from the working middle class watching his shows at night to those in the White House lucky enough to see him live. With such an adoration and in a time when fame held sway, who could resist doing a favor for "Satchmo" himself?

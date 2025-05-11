@@ -3,6 +3,12 @@ import "../styles/global.css";
 const articles = Object.values(
   import.meta.glob("../pages/posts/*.{md,mdx}", { eager: true })
 );
+
+articles.sort((a: any, b: any) => {
+  const orderA = a.frontmatter.order ?? Infinity;
+  const orderB = b.frontmatter.order ?? Infinity;
+  return orderA - orderB;
+});
 ---
 
 <div class="m-auto max-w-max">

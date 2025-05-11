@@ -2,8 +2,10 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "foxfibre has revolutionized cotton"
 date: 12/04/2024
+order: 6
 ---
- Montreal-based brand, Naked and Famous, has ignited the widespread appeal in selvedge denim in the past decade. Known for their blend of classic silhouettes and a perpetual stream of denim innovations, they cater to the “denim-head” who appreciate both timeless quality and bold innovation. Their latest Fall/Winter 2024 collection showcases an unassumingly special release: the All Natural FoxFibre Selvedge. This 15oz Japanese denim quietly stands out due to its weft crafted from FoxFibre, a fabric rarely discussed in the denim world despite its revolutionary nature and history.
+
+Montreal-based brand, Naked and Famous, has ignited the widespread appeal in selvedge denim in the past decade. Known for their blend of classic silhouettes and a perpetual stream of denim innovations, they cater to the “denim-head” who appreciate both timeless quality and bold innovation. Their latest Fall/Winter 2024 collection showcases an unassumingly special release: the All Natural FoxFibre Selvedge. This 15oz Japanese denim quietly stands out due to its weft crafted from FoxFibre, a fabric rarely discussed in the denim world despite its revolutionary nature and history.
 
 Born in 1955 in Woodside, California, Sally Fox grew up as one of eight children in her household. At the age of 12, she bought her first spindle with money earned from babysitting, marking the start of a soon to be lifelong journey. Sally went on to study biology at California State Polytechnic University and subsequently joined the Peace Corps where she traveled to Gambia, West Africa. There she studied the environmental challenges affecting local rice and peanut crops, witnessing firsthand the damage caused by pesticides. Astonished by the harm she witnessed, she returned to California and earned her Master’s degree in pest management from the University of California.
 
@@ -17,4 +19,4 @@ Traditionally, coloured cotton comprises of short, fragile fibres that have to b
 
 FoxFibre revolutionized the textile industry by introducing a cotton that is naturally pest and disease resistant, requiring far less water and eliminating the need for any bleaching or dyeing. It is inherently stronger, more durable, and even more fire-resistant than conventional cotton. FoxFibre bypasses every harmful step of the traditional cotton-growing process, offering a superior and environmentally friendly alternative to traditional cotton methods.
 
-Recently, FoxFibre has experienced a resurgence, reminiscent of its rapid success of the 1990s. Despite the newfound popularity, Sally Fox remains at the helm, overseeing every stage of FoxFibre’s production to ensure every bale meets her highest standards. As the demand for eco-conscious textiles continue to grow, FoxFibre stands as a beacon of sustainable innovation. It’s a true miracle in cotton that promises a brighter future for the entire textile industry. 
+Recently, FoxFibre has experienced a resurgence, reminiscent of its rapid success of the 1990s. Despite the newfound popularity, Sally Fox remains at the helm, overseeing every stage of FoxFibre’s production to ensure every bale meets her highest standards. As the demand for eco-conscious textiles continue to grow, FoxFibre stands as a beacon of sustainable innovation. It’s a true miracle in cotton that promises a brighter future for the entire textile industry.

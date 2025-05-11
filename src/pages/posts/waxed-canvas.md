@@ -2,6 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "the history of waxed canvas"
 date: 08/27/2024
+order: 2
 ---
 
 ![Oil Painting of a Sailboat](../../assets/images/sailboat.jpg)

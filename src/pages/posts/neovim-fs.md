@@ -2,6 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "neovim configuration file structures"
 date: 08/17/2024
+order: 8
 ---
 
 Day by day, it appears as if a new IDE or text editor is released to the masses. With the rise of AI, this trend has ushering in editors with integrated AI features, such as Cursor, Void, and the controversial PearAI. Despite these advancements, many developers remain loyal to a more classic tool: Neovim. A fork of Vim, Neovim is beloved for its high extensibility and deep customizability.
