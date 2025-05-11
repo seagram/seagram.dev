@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 const articles = Object.values(
-  import.meta.glob("../pages/posts/*.md", { eager: true })
+  import.meta.glob("../pages/posts/*.{md,mdx}", { eager: true })
 );
 ---
 

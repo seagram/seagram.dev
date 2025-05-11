@@ -18,21 +18,21 @@ Fast forward to the 1700s, when Scottish weaver Francis Webster introduced the i
 
 ## filson tin cloth cruiser
 
+![Filson Tin Cloth Cruiser Jacket](../../assets/images/filson.png)
+
 The Great Klondike Gold Rush of 1897 saw thousands of hopeful souls pass through Seattle en route to the north. C.C. Filson recognized an opportunity and founded C.C. Filson's Pioneer Alaska Clothing and Blanket Manufacturers. Its purpose was to produce the garments that prospectors would wear while mining for gold. A year later, a prospector named Robert McFadden commissioned Filson to create the first cruiser shirt—a work shirt featuring four pockets on the front and a single pocket on the back. Years later, in 1912, Filson patented this design as the "Wool Cruiser Shirt."
 
 By 1920, Filson began importing English "tin cloth" (waxed cotton fabric) from British Millerain and introduced their first "waterproofed khaki" cruising shirt. The Tin Cloth Cruiser became a staple in the Pacific Northwest logging camps, where timber cruisers would scout forests for harvestable timber, mapping sections for logging crews. The signature back pocket served exclusively as a map holder. Over the years, Filson made several iterative updates to the design. In 1922, a single-layer version with reinforced shoulders and sleeves was introduced. By 1934, a variation with a front-shoulder cape was created. Despite controversy over recent changes in ownership and manufacturing, the Filson Tin Cloth Cruiser retains its place in the history of waxed garments due to its timeless appeal and practical utility.
 
-![Filson Tin Cloth Cruiser Jacket](../../assets/images/filson.png)
-
 ## barbour bedale
+
+![Barbour Bedale Jacket](../../assets/images/barbour.webp)
 
 Founded in 1894 in South Shields, England, Barbour began as J. Barbour & Sons, producing suits for nearly every British International motorcycle team from 1936 to 1977. It was Duncan Barbour, the third generation of the family and an avid motorcyclist, who introduced the one-piece waxed-cotton Barbour International suit. This innovation led Barbour to expand into manufacturing waxed cotton jackets for the public.
 
 In 1980, Barbour unveiled the Bedale, a lightweight, thornproof short riding jacket designed by Dame Margaret, the Chairwoman of J. Barbour & Sons. The Bedale was specifically created for equestrian use, featuring a shorter length and ample room, lined with nylon for added water resistance. Since its invention, the Bedale has evolved to use a 100% cotton lining, a more breathable alternative decorated with their signature tartan lining. The pockets are lined with moleskin, a soft, dense cotton fabric whose distinct brushed surface closely resembles an animal's mole fur. It's made by weaving a heavy twill cotton, upon which the top layer of fibers are sheared, creating a slubby, neppy texture. It provides a soft finish for the pockets with an added benefit of warmth.
 
 The Bedale also features a removable hood, which can be exchanged for other Barbour hoods with various linings depending on the climate. A key distinction between the Bedale and the Classic Bedale lies in their fabric composition. The Classic Bedale is crafted from Barbour's 6oz Sylkoil—a unshorn woven waxed cotton with a slight pile and matte finish. Whereas the Bedale utilizes Barbour's "thornproof" 6oz waxed cotton, with a shinier finish due to a heavier application of wax, offering greater durability and water-resistance at the expense of added stiffness and reduced breathability. Bedale has become a mainstay in Barbour's collection, maintaining a blend of practicality and elegance.
-
-![Barbour Bedale Jacket](../../assets/images/barbour.webp)
 
 # conclusion
 
