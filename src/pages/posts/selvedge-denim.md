@@ -3,88 +3,16 @@ layout: ../../layouts/ArticleLayout.astro
 title: "a comparison of shuttle and projectile looms"
 date: 5/24/2024
 ---
+ Shred, pick, batten. For thousands of years, these three essential movements have formed the bedrock of weaving, dating back to humanity’s earliest fabrics from the New Stone Age. The invention of the loom enabled ancient weavers to turn raw fibres into textile marvels, with the first looms taking the form of the “warp-weighted loom”—a simple but ingenious structure of vertical poles that allowed warp threads to be weighted and suspended, creating a controlled path for the weft to pass through. Over time, as civilizations evolved, new loom designs emerged. Among these were the treadle loom and the drawloom, ancestors of the advanced looms we recognize today.
 
-Shred, pick, batten. For thousands of years, these three essential
-movements have formed the bedrock of weaving, dating back to humanity’s
-earliest fabrics from the New Stone Age. The invention of the loom
-enabled ancient weavers to turn raw fibres into textile marvels, with
-the first looms taking the form of the “warp-weighted loom”—a simple but
-ingenious structure of vertical poles that allowed warp threads to be
-weighted and suspended, creating a controlled path for the weft to pass
-through. Over time, as civilizations evolved, new loom designs emerged.
-Among these were the treadle loom and the drawloom, ancestors of the
-advanced looms we recognize today.
+The treadle loom, deriving its name from the Spanish word for "pedal," marked a revolutionary step forward in weaving after the Spanish conquest in 1521. By allowing weavers to control warp threads with foot pedals, it enabled a single weaver to handle larger fabrics. Drawlooms confide in a more mysterious history, as their origins are yet to be discovered. However, the prevailing theories speculate it originated as a silk-weaving loom in Asia. However, despite these advancements, one process continued to slow the evolution of the loom: the picking mechanism.
 
-#
+While shredding and battening could be adapted for automation, picking required a level of speed and precision that early looms struggled to achieve. It was in 1733 that John Kay introduced the "flying shuttle," the first attempt to combat such a bottleneck. On traditional looms, the weaver could only weave to the extent of their reach. In order to produce a wider fabric, two weavers were required, throwing and catching the shuttle between each other. Kay’s flying shuttle loom would drive the shuttle back and worth through the shed, allowing a single operator to weave wider fabrics. Edmund Cartwright brought forth the first power loom in 1784 but it wasn’t until the Lancashire loom of 1841, did such technology become economically feasible.
 
-The treadle loom, deriving its name from the Spanish word for "pedal,"
-marked a revolutionary step forward in weaving after the Spanish
-conquest in 1521. By allowing weavers to control warp threads with foot
-pedals, it enabled a single weaver to handle larger fabrics. Drawlooms
-confide in a more mysterious history, as their origins are yet to be
-discovered. However, the prevailing theories speculate it originated as
-a silk-weaving loom in Asia. However, despite these advancements, one
-process continued to slow the evolution of the loom: the picking
-mechanism.
+The true leap, however, came with the fully automatic shuttle loom developed by the Draper Corporation in 1895. Known as the "Northrop" loom, this machine automated all three core aspects of weaving, freeing operators to oversee multiple looms simultaneously as it managed thread reloading autonomously. Draper refined this design with the lighter E-model in 1909, and by 1914, nearly 40% of American looms were Northrop looms. This machine revolutionized the textile industry, embedding shuttle looms firmly in weaving history.
 
-#
+The development of weaving technology continued into the 1940s with the Sulzer Brothers in Switzerland, who introduced the projectile loom. Unlike shuttle looms, the projectile loom used a small metal projectile instead of a shuttle to transport the weft across the warp, achieving unprecedented speed and precision. This innovation laid the groundwork for modern weaving technology and enabled the production of fabrics at remarkable rates. However, the projectile loom diverges from the shuttle loom in a critical way: it cuts the weft at the fabric's edge rather than looping it back. This design difference results in a fabric that lacks the "self-edge" or "selvedge" finish produced by shuttle looms, making the fabric prone to unraveling at the edges.
 
-While shredding and battening could be adapted for automation, picking
-required a level of speed and precision that early looms struggled to
-achieve. It was in 1733 that John Kay introduced the "flying shuttle,"
-the first attempt to combat such a bottleneck. On traditional looms, the
-weaver could only weave to the extent of their reach. In order to
-produce a wider fabric, two weavers were required, throwing and catching
-the shuttle between each other. Kay’s flying shuttle loom would drive
-the shuttle back and worth through the shed, allowing a single operator
-to weave wider fabrics. Edmund Cartwright brought forth the first power
-loom in 1784 but it wasn’t until the Lancashire loom of 1841, did such
-technology become economically feasible.
+Despite the economical advantages of projectile looms, the shuttle looms remain a treasured tool, particularly for high-quality textiles. The selvedge seam created by shuttle looms is durable edge that resists fraying, making it highly desirable for fabrics of significant wear such as denim. Selvedge denim, with its distinctive "butterflied seam," is adored for its durability and aesthetic appeal, and small-scale manufacturers like Naked and Famous and Iron Heart, still rely on shuttle looms to produce their premium denim jeans and jackets. These selvedge edges are not just markers of quality but are symbols of meticulous care and craftsmanship in an era of mass production.
 
-#
-
-The true leap, however, came with the fully automatic shuttle loom
-developed by the Draper Corporation in 1895. Known as the "Northrop"
-loom, this machine automated all three core aspects of weaving, freeing
-operators to oversee multiple looms simultaneously as it managed thread
-reloading autonomously. Draper refined this design with the lighter
-E-model in 1909, and by 1914, nearly 40% of American looms were Northrop
-looms. This machine revolutionized the textile industry, embedding
-shuttle looms firmly in weaving history.
-
-#
-
-The development of weaving technology continued into the 1940s with the
-Sulzer Brothers in Switzerland, who introduced the projectile loom.
-Unlike shuttle looms, the projectile loom used a small metal projectile
-instead of a shuttle to transport the weft across the warp, achieving
-unprecedented speed and precision. This innovation laid the groundwork
-for modern weaving technology and enabled the production of fabrics at
-remarkable rates. However, the projectile loom diverges from the shuttle
-loom in a critical way: it cuts the weft at the fabric's edge rather
-than looping it back. This design difference results in a fabric that
-lacks the "self-edge" or "selvedge" finish produced by shuttle looms,
-making the fabric prone to unraveling at the edges.
-
-#
-
-Despite the economical advantages of projectile looms, the shuttle looms
-remain a treasured tool, particularly for high-quality textiles. The
-selvedge seam created by shuttle looms is durable edge that resists
-fraying, making it highly desirable for fabrics of significant wear such
-as denim. Selvedge denim, with its distinctive "butterflied seam," is
-adored for its durability and aesthetic appeal, and small-scale
-manufacturers like Naked and Famous and Iron Heart, still rely on
-shuttle looms to produce their premium denim jeans and jackets. These
-selvedge edges are not just markers of quality but are symbols of
-meticulous care and craftsmanship in an era of mass production.
-
-#
-
-The resurgence of interest in selvedge denim is a testament to
-traditional weaving methods. While projectile looms enable mass
-production for the likes of Levi’s and Lee, shuttle looms produce robust
-fabrics, reminding us that the artistry of weaving yields a denim with
-unmatched quality. In a world driven by automation, the revival of
-selvedge denim illustrates an appreciation for human craftsmanship in
-the art of denim.
+The resurgence of interest in selvedge denim is a testament to traditional weaving methods. While projectile looms enable mass production for the likes of Levi’s and Lee, shuttle looms produce robust fabrics, reminding us that the artistry of weaving yields a denim with unmatched quality. In a world driven by automation, the revival of selvedge denim illustrates an appreciation for human craftsmanship in the art of denim. 

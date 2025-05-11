@@ -3,96 +3,18 @@ layout: ../../layouts/ArticleLayout.astro
 title: "foxfibre has revolutionized cotton"
 date: 12/04/2024
 ---
+ Montreal-based brand, Naked and Famous, has ignited the widespread appeal in selvedge denim in the past decade. Known for their blend of classic silhouettes and a perpetual stream of denim innovations, they cater to the “denim-head” who appreciate both timeless quality and bold innovation. Their latest Fall/Winter 2024 collection showcases an unassumingly special release: the All Natural FoxFibre Selvedge. This 15oz Japanese denim quietly stands out due to its weft crafted from FoxFibre, a fabric rarely discussed in the denim world despite its revolutionary nature and history.
 
-Montreal-based brand, Naked and Famous, has ignited the widespread
-appeal in selvedge denim in the past decade. Known for their blend of
-classic silhouettes and a perpetual stream of denim innovations, they
-cater to the “denim-head” who appreciate both timeless quality and bold
-innovation. Their latest Fall/Winter 2024 collection showcases an
-unassumingly special release: the All Natural FoxFibre Selvedge. This
-15oz Japanese denim quietly stands out due to its weft crafted from
-FoxFibre, a fabric rarely discussed in the denim world despite its
-revolutionary nature and history.
+Born in 1955 in Woodside, California, Sally Fox grew up as one of eight children in her household. At the age of 12, she bought her first spindle with money earned from babysitting, marking the start of a soon to be lifelong journey. Sally went on to study biology at California State Polytechnic University and subsequently joined the Peace Corps where she traveled to Gambia, West Africa. There she studied the environmental challenges affecting local rice and peanut crops, witnessing firsthand the damage caused by pesticides. Astonished by the harm she witnessed, she returned to California and earned her Master’s degree in pest management from the University of California.
 
-#
+Upon graduation, Sally began working as a pollinator for a cotton breeder in California. She started breeding pest-resistant cotton, and during this time, she came across a bag of seeds that produced naturally brown cotton. This discovery inspired her later on in 1988, where at Texas Tech University, she successfully developed the world’s first species of naturally coloured cotton that could be spun on industrial machinery. This was nothing short of a groundbreaking achievement. Her cotton, reminiscent of heirloom varieties cultivated over 4,000 years ago in South America, grew in shades of brown, yellow, blue, and green.
 
-Born in 1955 in Woodside, California, Sally Fox grew up as one of eight
-children in her household. At the age of 12, she bought her first
-spindle with money earned from babysitting, marking the start of a soon
-to be lifelong journey. Sally went on to study biology at California
-State Polytechnic University and subsequently joined the Peace Corps
-where she traveled to Gambia, West Africa. There she studied the
-environmental challenges affecting local rice and peanut crops,
-witnessing firsthand the damage caused by pesticides. Astonished by the
-harm she witnessed, she returned to California and earned her Master’s
-degree in pest management from the University of California.
+Sally continued to perfect her cotton by crossbreeding it with long-staple and Pima cotton, attempting to retain its pest resistance while enhancing its durability and spinnability. After years of crossbreeding, she had created a strong, vibrant fibre with an unmatched depth of natural color. In 1988, she founded Natural Cotton Colours Inc., and began selling her cotton to Japanese textile mills. The following year, she landed a 122 bushel order with a Japanese mill for $279,000. Upon recognizing the potential of her invention, she trademarked her unique cotton as FoxFibre. FoxFibre soon gained mainstream attention, and her company began supplying major brands like L.L. Bean and Land’s End, with her company quickly reaching a valuation of over $10 million.
 
-#
+Sally’s success certainly didn’t develop without major setbacks. Neighbouring cotton farmers in California feared that Sally’s distinct cotton could cross-contaminate their crops, leading them to lobby for the reinforcement of old restrictive legislation. Sally then relocated to Arizona, only to face the same resistance from cotton growers there six years later. She was forced to move once again, this time to Northern California. Without a doubt, her resilience throughout this process is a testament to her unwavering commitment to sustainable innovation.
 
-Upon graduation, Sally began working as a pollinator for a cotton
-breeder in California. She started breeding pest-resistant cotton, and
-during this time, she came across a bag of seeds that produced naturally
-brown cotton. This discovery inspired her later on in 1988, where at
-Texas Tech University, she successfully developed the world’s first
-species of naturally coloured cotton that could be spun on industrial
-machinery. This was nothing short of a groundbreaking achievement. Her
-cotton, reminiscent of heirloom varieties cultivated over 4,000 years
-ago in South America, grew in shades of brown, yellow, blue, and green.
+Traditionally, coloured cotton comprises of short, fragile fibres that have to be hand-spun. This led textile manufacturers to favor bleached white cotton, which has longer, stronger fibres suited for machine processing. However, the bleaching process poses severe environmental risks. Excess bleach pollutes water treatment plants and sewer systems, causing reproductive and neurological health issues to aquatic species. Conventional cotton also relies heavily on GMO seeds, vast amounts of water, and both herbicides and pesticides.
 
-#
+FoxFibre revolutionized the textile industry by introducing a cotton that is naturally pest and disease resistant, requiring far less water and eliminating the need for any bleaching or dyeing. It is inherently stronger, more durable, and even more fire-resistant than conventional cotton. FoxFibre bypasses every harmful step of the traditional cotton-growing process, offering a superior and environmentally friendly alternative to traditional cotton methods.
 
-Sally continued to perfect her cotton by crossbreeding it with
-long-staple and Pima cotton, attempting to retain its pest resistance
-while enhancing its durability and spinnability. After years of
-crossbreeding, she had created a strong, vibrant fibre with an unmatched
-depth of natural color. In 1988, she founded Natural Cotton Colours
-Inc., and began selling her cotton to Japanese textile mills. The
-following year, she landed a 122 bushel order with a Japanese mill for
-$279,000. Upon recognizing the potential of her invention, she
-trademarked her unique cotton as FoxFibre. FoxFibre soon gained
-mainstream attention, and her company began supplying major brands like
-L.L. Bean and Land’s End, with her company quickly reaching a valuation
-of over $10 million.
-
-#
-
-Sally’s success certainly didn’t develop without major setbacks.
-Neighbouring cotton farmers in California feared that Sally’s distinct
-cotton could cross-contaminate their crops, leading them to lobby for
-the reinforcement of old restrictive legislation. Sally then relocated
-to Arizona, only to face the same resistance from cotton growers there
-six years later. She was forced to move once again, this time to
-Northern California. Without a doubt, her resilience throughout this
-process is a testament to her unwavering commitment to sustainable
-innovation.
-
-## the foxfibre revolution
-
-Traditionally, coloured cotton comprises of short, fragile fibres that
-have to be hand-spun. This led textile manufacturers to favor bleached
-white cotton, which has longer, stronger fibres suited for machine
-processing. However, the bleaching process poses severe environmental
-risks. Excess bleach pollutes water treatment plants and sewer systems,
-causing reproductive and neurological health issues to aquatic species.
-Conventional cotton also relies heavily on GMO seeds, vast amounts of
-water, and both herbicides and pesticides.
-
-#
-
-FoxFibre revolutionized the textile industry by introducing a cotton
-that is naturally pest and disease resistant, requiring far less water
-and eliminating the need for any bleaching or dyeing. It is inherently
-stronger, more durable, and even more fire-resistant than conventional
-cotton. FoxFibre bypasses every harmful step of the traditional
-cotton-growing process, offering a superior and environmentally friendly
-alternative to traditional cotton methods.
-
-#
-
-Recently, FoxFibre has experienced a resurgence, reminiscent of its
-rapid success of the 1990s. Despite the newfound popularity, Sally Fox
-remains at the helm, overseeing every stage of FoxFibre’s production to
-ensure every bale meets her highest standards. As the demand for
-eco-conscious textiles continue to grow, FoxFibre stands as a beacon of
-sustainable innovation. It’s a true miracle in cotton that promises a
-brighter future for the entire textile industry.
+Recently, FoxFibre has experienced a resurgence, reminiscent of its rapid success of the 1990s. Despite the newfound popularity, Sally Fox remains at the helm, overseeing every stage of FoxFibre’s production to ensure every bale meets her highest standards. As the demand for eco-conscious textiles continue to grow, FoxFibre stands as a beacon of sustainable innovation. It’s a true miracle in cotton that promises a brighter future for the entire textile industry. 

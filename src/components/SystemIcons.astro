@@ -1,17 +1,16 @@
 ---
-import AWS from "../assets/icons/aws.svg";
-import Postgres from "../assets/icons/postgres.svg";
-import Kubernetes from "../assets/icons/kubernetes.svg";
-import Ansible from "../assets/icons/ansible.svg";
-import Terraform from "../assets/icons/terraform.svg";
-import Jenkins from "../assets/icons/jenkins.svg";
+import { Icon } from "astro-icon/components";
+
+const iconNames = [
+  "aws",
+  "postgres",
+  "kubernetes",
+  "ansible",
+  "terraform",
+  "jenkins",
+];
 ---
 
 <div class="flex justify-center items-center space-x-4">
-  <AWS width={56} height={56} />
-  <Postgres width={56} height={56} />
-  <Kubernetes width={56} height={56} />
-  <Ansible width={56} height={56} />
-  <Terraform width={56} height={56} />
-  <Jenkins width={56} height={56} />
+  {iconNames.map((name) => <Icon name={name} width={56} height={56} />)}
 </div>

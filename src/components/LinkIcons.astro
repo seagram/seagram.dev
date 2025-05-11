@@ -1,23 +1,23 @@
 ---
-import Github from "../assets/icons/github.svg";
-import LinkedIn from "../assets/icons/linkedin.svg";
+import { Icon } from "astro-icon/components";
+
+const links = [
+  { href: "https://github.com/seagram", name: "github" },
+  { href: "https://www.linkedin.com/in/seagram", name: "linkedin" },
+];
 ---
 
 <div class="flex justify-center items-center mt-4 space-x-4">
-  <a
-    href="https://github.com/seagram"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="hover:scale-110 transition-transform duration-200"
-  >
-    <Github width={40} height={40} />
-  </a>
-  <a
-    href="https://www.linkedin.com/in/seagram"
-    target="_blank"
-    rel="noopener noreferrer"
-    class="hover:scale-110 transition-transform duration-200"
-  >
-    <LinkedIn width={40} height={40} />
-  </a>
+  {
+    links.map((link) => (
+      <a
+        href={link.href}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:scale-110 transition-transform duration-200"
+      >
+        <Icon name={link.name} width={40} height={40} />
+      </a>
+    ))
+  }
 </div>

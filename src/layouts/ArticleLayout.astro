@@ -1,23 +1,25 @@
 ---
 import "../styles/global.css";
 import Prose from "../components/Prose.astro";
-import "@fontsource/cutive";
-
+import "@fontsource-variable/eb-garamond";
+import { ClientRouter } from "astro:transitions";
 const { frontmatter } = Astro.props;
 ---
 
-<html lang="en" class="bg-orange-100">
+<html lang="en" class="bg-zinc-900 text-stone-300 font-eb-garamond">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
+    <title>seagram.dev</title>
+    <ClientRouter />
   </head>
-  <body class="bg-[url(../assets/images/noise.svg)] font-cutive">
-    <article class="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
-      <header class="mb-8 text-center">
-        <h1 class="sm:text-2xl lg:text-3xl">
+  <body>
+    <article class="mx-auto max-w-3xl my-10">
+      <header class="text-center">
+        <h1 class="sm:text-3xl lg:text-4xl mb-2">
           {frontmatter.title}
         </h1>
-        <p class="m-2">
+        <p class="text-xl mb-4">
           {frontmatter.date}
         </p>
       </header>

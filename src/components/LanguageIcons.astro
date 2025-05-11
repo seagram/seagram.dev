@@ -1,17 +1,11 @@
 ---
-import Bash from "../assets/icons/bash.svg";
-import Lua from "../assets/icons/lua.svg";
-import Python from "../assets/icons/python.svg";
-import TS from "../assets/icons/ts.svg";
-import Go from "../assets/icons/go.svg";
+import { Icon } from "astro-icon/components";
+
+const iconNames = ["bash", "lua", "python", "ts", "go"];
 ---
 
 <div class="flex justify-center items-center space-x-4">
-  <Bash width={56} height={56} />
-  <Lua width={56} height={56} />
-  <Python width={56} height={56} />
-  <TS width={56} height={56} />
-  <Go width={56} height={56} />
+  {iconNames.map((name) => <Icon name={name} width={56} height={56} />)}
 </div>
 <div class="flex justify-center items-center text-sm mt-1">
   <p class="text-center text-base my-1">* and spanish</p>
