@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "milo of croton: the first bodybuilder"
 date: 07/02/2024
-order: 7
+order: 8
 ---
 
 Bodybuilding, revered as both a sport and an artform, finds its historical roots in what enthusiasts often call the "Bronze Age of Bodybuilding." The German showman Eugene Sandow, celebrated as the Father of Bodybuilding, famously launched the sport’s popularity after being inspired by classical statues on a trip to Rome. Yet, the underlying philosophy of bodybuilding goes much deeper, centering around one core tenet: progressive overload.

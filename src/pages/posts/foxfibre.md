@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "foxfibre has revolutionized cotton"
 date: 12/04/2024
-order: 6
+order: 7
 ---
 
 Montreal-based brand, Naked and Famous, has ignited the widespread appeal in selvedge denim in the past decade. Known for their blend of classic silhouettes and a perpetual stream of denim innovations, they cater to the “denim-head” who appreciate both timeless quality and bold innovation. Their latest Fall/Winter 2024 collection showcases an unassumingly special release: the All Natural FoxFibre Selvedge. This 15oz Japanese denim quietly stands out due to its weft crafted from FoxFibre, a fabric rarely discussed in the denim world despite its revolutionary nature and history.

@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "how nixon smuggled drugs for louis armstrong"
 date: 06/07/2024
-order: 5
+order: 6
 ---
 
 ![Louis Armstrong Smoking](../../assets/images/louis-armstrong.png)

@@ -1,0 +1,187 @@
+---
+layout: ../../layouts/ArticleLayout.astro
+title: "the jazz of '59"
+date: 5/14/2025
+order: 2
+---
+
+1959 was a landmark year for jazz. The year, like the artists of it, is often cited as the peak of the genre's transformative and influential period. Below are some favorites from the year:
+
+{(() => {
+const albums = [
+{
+title: "Chet",
+artist: "Chet Baker",
+albumId: "126183544",
+coverImage: '1-chet.png'
+},
+{
+title: "Kind of Blue",
+artist: "Miles Davis",
+albumId: "655910",
+coverImage: '2-miles.png'
+},
+{
+title: "The Magic of Sarah Vaughan",
+artist: "Sarah Vaughan",
+albumId: "102234831",
+coverImage: '3-vaughan.png'
+},
+{
+title: "Last Recording",
+artist: "Billie Holiday",
+albumId: "122089698",
+coverImage: '4-holiday.png'
+},
+{
+title: "All or Nothing at All",
+artist: "Billie Holiday",
+albumId: "122089881",
+coverImage: '5-billie.png'
+},
+{
+title: "The Lonely One",
+artist: "Bud Powell",
+albumId: "37951485",
+coverImage: '6-powell.png'
+},
+{
+title: "The Jazz Soul of Oscar Peterson",
+artist: "Oscar Peterson",
+albumId: "77630855",
+coverImage: '7-oscar.png'
+},
+{
+title: "Ella Sings the Gershwin Song Book",
+artist: "Ella Fitzgerald",
+albumId: "99352742",
+coverImage: '8-ella.png'
+},
+{
+title: "Moanin'",
+artist: "Art Blakey and the Jazz Messengers",
+albumId: "77685991",
+coverImage: '9-art.png'
+},
+{
+title: "Like In Love",
+artist: "Nancy Wilson",
+albumId: "79945001",
+coverImage: '10-nancy.png'
+},
+{
+title: "And I Thought About You",
+artist: "Johnny Hartman",
+albumId: "44786581",
+coverImage: '11-hartman.png'
+},
+{
+title: "Louis Meets Oscar",
+artist: "Louis Armstrong & Oscar Peterson",
+albumId: "93438096",
+coverImage: '12-louis.png'
+},
+{
+title: "Workin' With The Davis Quintet",
+artist: "Miles Davis",
+albumId: "293116676",
+coverImage: '13-quintet.png'
+},
+{
+title: "A Dynamic New Sound",
+artist: "The Wes Montgomery Trio",
+albumId: "150042769",
+coverImage: '14-wes.png'
+},
+{
+title: "Giant Steps",
+artist: "John Coltrane",
+albumId: "154620410",
+coverImage: '15-coltrane.png'
+},
+{
+title: "What A Diff'rence A Day Makes!",
+artist: "Dinah Washington",
+albumId: "94441582",
+coverImage: '16-dinah.png'
+},
+{
+title: "Everybody Digs Bill Evans",
+artist: "Bill Evans",
+albumId: "1205965",
+coverImage: '17-bill.png'
+},
+{
+title: "Porgy and Bess",
+artist: "Ella Fitzgerald & Louis Armstrong",
+albumId: "52133954",
+coverImage: '18-porgy.png'
+},
+{
+title: "Symphony Hall Concert",
+artist: "Erroll Garner",
+albumId: "186503518",
+coverImage: '19-eroll.png'
+},
+{
+title: "Time Out",
+artist: "The Dave Brubeck Quartet",
+albumId: "2809485",
+coverImage: '20-brubeck.png'
+},
+];
+
+return (
+
+<div>
+  {albums.map((album, index) => {
+    return (
+      <div
+        key={album.albumId || index}
+        style={{
+          marginBottom: "40px",
+          textAlign: "center",
+          paddingBottom: "30px",
+          borderBottom: index < albums.length - 1 ? "1px solid #333" : "none",
+        }}
+      >
+        {album.coverImage && (
+          <img
+            src={`/src/assets/albums/${album.coverImage}`}
+            alt={`${album.title} by ${album.artist}`}
+            style={{
+              display: "block",
+              marginLeft: "auto",
+              marginRight: "auto",
+              width: "250px",
+              height: "250px",
+              objectFit: "cover",
+              borderRadius: "12px",
+              marginBottom: "15px",
+            }}
+          />
+        )}
+        <h2 style={{ marginTop: "0px", marginBottom: "5px" }}>{album.title}</h2>
+        <p style={{ marginTop: "0px", marginBottom: "15px", color: "#555" }}>
+          {album.artist}
+        </p>
+        <iframe
+          src={`https://embed.tidal.com/albums/${album.albumId}?disableAnalytics=true`}
+          allow="encrypted-media"
+          allowFullScreen
+          frameBorder="0"
+          className="tidal-embed-iframe"
+          style={{
+            height: "96px",
+            borderRadius: "10px",
+            display: "block",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+          title={`${album.title} embedded player`}
+        ></iframe>
+      </div>
+    );
+  })}
+</div>
+); })()}
