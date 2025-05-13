@@ -5,6 +5,28 @@ date: 5/14/2025
 order: 2
 ---
 
+import { Image } from "astro:assets";
+import chet from "../../assets/images/1-chet.png";
+import miles from "../../assets/images/2-miles.png";
+import vaughan from "../../assets/images/3-vaughan.png";
+import holiday from "../../assets/images/4-holiday.png";
+import billie from "../../assets/images/5-billie.png";
+import powell from "../../assets/images/6-powell.png";
+import oscar from "../../assets/images/7-oscar.png";
+import ella from "../../assets/images/8-ella.png";
+import art from "../../assets/images/9-art.png";
+import nancy from "../../assets/images/10-nancy.png";
+import hartman from "../../assets/images/11-hartman.png";
+import louis from "../../assets/images/12-louis.png";
+import quintet from "../../assets/images/13-quintet.png";
+import wes from "../../assets/images/14-wes.png";
+import coltrane from "../../assets/images/15-coltrane.png";
+import dinah from "../../assets/images/16-dinah.png";
+import bill from "../../assets/images/17-bill.png";
+import porgy from "../../assets/images/18-porgy.png";
+import eroll from "../../assets/images/19-eroll.png";
+import brubeck from "../../assets/images/20-brubeck.png";
+
 1959 was a landmark year for jazz. The year, like the artists of it, is often cited as the peak of the genre's transformative and influential period. Below are some favorites from the year:
 
 {(() => {
@@ -13,121 +35,121 @@ const albums = [
 title: "Chet",
 artist: "Chet Baker",
 albumId: "126183544",
-coverImage: '1-chet.png'
+coverImage: chet
 },
 {
 title: "Kind of Blue",
 artist: "Miles Davis",
 albumId: "655910",
-coverImage: '2-miles.png'
+coverImage: miles
 },
 {
 title: "The Magic of Sarah Vaughan",
 artist: "Sarah Vaughan",
 albumId: "102234831",
-coverImage: '3-vaughan.png'
+coverImage: vaughan
 },
 {
 title: "Last Recording",
 artist: "Billie Holiday",
 albumId: "122089698",
-coverImage: '4-holiday.png'
+coverImage: holiday
 },
 {
 title: "All or Nothing at All",
 artist: "Billie Holiday",
 albumId: "122089881",
-coverImage: '5-billie.png'
+coverImage: billie
 },
 {
 title: "The Lonely One",
 artist: "Bud Powell",
 albumId: "37951485",
-coverImage: '6-powell.png'
+coverImage: powell
 },
 {
 title: "The Jazz Soul of Oscar Peterson",
 artist: "Oscar Peterson",
 albumId: "77630855",
-coverImage: '7-oscar.png'
+coverImage: oscar
 },
 {
 title: "Ella Sings the Gershwin Song Book",
 artist: "Ella Fitzgerald",
 albumId: "99352742",
-coverImage: '8-ella.png'
+coverImage: ella
 },
 {
 title: "Moanin'",
 artist: "Art Blakey and the Jazz Messengers",
 albumId: "77685991",
-coverImage: '9-art.png'
+coverImage: art
 },
 {
 title: "Like In Love",
 artist: "Nancy Wilson",
 albumId: "79945001",
-coverImage: '10-nancy.png'
+coverImage: nancy
 },
 {
 title: "And I Thought About You",
 artist: "Johnny Hartman",
 albumId: "44786581",
-coverImage: '11-hartman.png'
+coverImage: hartman
 },
 {
 title: "Louis Meets Oscar",
 artist: "Louis Armstrong & Oscar Peterson",
 albumId: "93438096",
-coverImage: '12-louis.png'
+coverImage: louis
 },
 {
 title: "Workin' With The Davis Quintet",
 artist: "Miles Davis",
 albumId: "293116676",
-coverImage: '13-quintet.png'
+coverImage: quintet
 },
 {
 title: "A Dynamic New Sound",
 artist: "The Wes Montgomery Trio",
 albumId: "150042769",
-coverImage: '14-wes.png'
+coverImage: wes
 },
 {
 title: "Giant Steps",
 artist: "John Coltrane",
 albumId: "154620410",
-coverImage: '15-coltrane.png'
+coverImage: coltrane
 },
 {
 title: "What A Diff'rence A Day Makes!",
 artist: "Dinah Washington",
 albumId: "94441582",
-coverImage: '16-dinah.png'
+coverImage: dinah
 },
 {
 title: "Everybody Digs Bill Evans",
 artist: "Bill Evans",
 albumId: "1205965",
-coverImage: '17-bill.png'
+coverImage: bill
 },
 {
 title: "Porgy and Bess",
 artist: "Ella Fitzgerald & Louis Armstrong",
 albumId: "52133954",
-coverImage: '18-porgy.png'
+coverImage: porgy
 },
 {
 title: "Symphony Hall Concert",
 artist: "Erroll Garner",
 albumId: "186503518",
-coverImage: '19-eroll.png'
+coverImage: eroll
 },
 {
 title: "Time Out",
 artist: "The Dave Brubeck Quartet",
 albumId: "2809485",
-coverImage: '20-brubeck.png'
+coverImage: brubeck
 },
 ];
 
@@ -146,8 +168,8 @@ return (
         }}
       >
         {album.coverImage && (
-          <img
-            src={`/src/assets/images/albums/${album.coverImage}`}
+          <Image
+            src={album.coverImage}
             alt={`${album.title} by ${album.artist}`}
             style={{
               display: "block",
