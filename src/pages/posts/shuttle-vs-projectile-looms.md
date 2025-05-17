@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "a comparison of shuttle and projectile looms"
 date: 5/24/2024
-order: 10
+order: 9
 ---
 
 Shred, pick, batten. For thousands of years, these three essential movements have formed the bedrock of weaving, dating back to humanity’s earliest fabrics from the New Stone Age. The invention of the loom enabled ancient weavers to turn raw fibres into textile marvels, with the first looms taking the form of the “warp-weighted loom”—a simple but ingenious structure of vertical poles that allowed warp threads to be weighted and suspended, creating a controlled path for the weft to pass through. Over time, as civilizations evolved, new loom designs emerged. Among these were the treadle loom and the drawloom, ancestors of the advanced looms we recognize today.

@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "optimizing hypertrophy with lengthened partials"
 date: 11/09/2024
-order: 4
+order: 10
 ---
 
 In recent years, "science-based" lifting has seen a remarkable resurgence, marking a transition in the landscape of modern bodybuilding. With the dominance of social media, bridging information between both professional bodybuilders and amateur “gym-goers”, the availability of training information has never higher. However, what seems like a newfound phenomenon traces its roots back to the 1980s with legendary bodybuilder Mike Mentzer. He introduced his own form science-based training which was starkly unconventional: low-frequency, high-intensity training—a mere 30 minutes per day, three to four times a week. It was nothing short of radical, considering how near all of his competition trained hours upon hours a day, everyday of the week. While subsequent research in recent years has challenged some of Mentzer's approach, his scientific methodology laid the groundwork for the "optimal training" philosophy.

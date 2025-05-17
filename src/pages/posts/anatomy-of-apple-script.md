@@ -2,7 +2,7 @@
 layout: ../../layouts/ArticleLayout.astro
 title: "the anatomy of applescript syntax"
 date: 18/09/2024
-order: 5
+order: 7
 ---
 
 I’ve recently been developing a library to streamline macOS application automation, motivated largely by Apple’s reluctance to fully port the iOS Shortcuts Automation framework to macOS. Apple’s official recommended approach involves the macOS Shortcuts app in tandem with Automator, a cumbersome and outdated setup without any support for managing multiple automations simultaneously. Various community workarounds have emerged, like scheduling recurring iCalendar events to trigger shortcuts or using bash scripts with cron jobs. However, certain shortcuts require admin privileges, which in turn prompt users for password or biometric authentication, which unfortunately cannot be disabled or pre-approved in macOS. This led me to devise a solution to automate these authentication prompts, which appear as unfocusable GUI windows. My idea was to detect when a window appeared, verify if it was the authentication prompt, and fill out the username and password fields automatically. Initially, I thought Apple’s Swift programming language would contain the necessary libraries for scripting and window management tasks. However, Swift remains limited in its scripting tooling for macOS operations.
