@@ -1,0 +1,33 @@
+---
+const { active = "about", onSelect } = Astro.props;
+const options = ["about", "writing"];
+---
+
+<div class="mt-6 mb-6 text-xl text-center whitespace-nowrap font-sans">
+  <a
+    href="/"
+    class={[
+      "mx-4 px-2 py-1 transition-colors",
+      active === "about"
+        ? "text-stone-300"
+        : active === "article"
+          ? "text-zinc-500 hover:text-stone-300"
+          : "text-zinc-500 hover:text-stone-300",
+    ].join(" ")}
+  >
+    about
+  </a>
+  <a
+    href="/writing"
+    class={[
+      "mx-4 px-2 py-1 transition-colors",
+      active === "writing"
+        ? "text-stone-300"
+        : active === "article"
+          ? "text-zinc-500 hover:text-stone-300"
+          : "text-zinc-500 hover:text-stone-300",
+    ].join(" ")}
+  >
+    writing
+  </a>
+</div>

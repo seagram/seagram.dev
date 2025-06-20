@@ -1,6 +1,6 @@
 ---
-import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
+import ArticleBox from "../components/ArticleBox.astro";
 import NavBar from "../components/NavBar.astro";
 import FontPreloadLinks from "../components/FontPreloadLinks.astro";
 ---
@@ -19,14 +19,7 @@ import FontPreloadLinks from "../components/FontPreloadLinks.astro";
     <h1 class="font-special text-4xl mt-8 mb-6 text-center whitespace-nowrap">
       cal seagram
     </h1>
-    <NavBar active="about" />
-    <div class="mt-6 flex justify-center">
-      <div class="max-w-max text-center">
-        <p>software engineering student in montreal</p>
-        <p>focusing on dev ops and cloud architecture</p>
-        <p>writing neovim configurations & plugins</p>
-        <p>i enjoy bodybuilding, reading, and jazz</p>
-      </div>
-    </div>
+    <NavBar active="writing" />
+    <ArticleBox />
   </body>
 </html>

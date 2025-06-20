@@ -1,6 +1,131 @@
 @import "tailwindcss";
-@plugin '@tailwindcss/typography';
-@theme {
+
+@font-face {
+  font-family: "Special Elite";
+  src: url("/fonts/SpecialElite-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/EBGaramond-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/EBGaramond-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  src: url("/fonts/EBGaramond-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
   --font-sans: "Special Elite", "monospaced";
-  --font-eb-garamond: "EB Garamond Variable", "serif";
+  --font-eb-garamond: "EB Garamond", "serif";
+}
+
+.font-eb-garamond {
+  font-family: var(--font-eb-garamond) !important;
+}
+
+.font-special-elite {
+  font-family: var(--font-sans) !important;
+}
+
+/* Fallback for article styling */
+article {
+  font-family: "EB Garamond", serif;
+  color: #e7e5e4;
+}
+article p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.75;
+  font-size: 1.25rem;
+}
+article h1 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  color: #d6d3d1;
+  text-align: center;
+}
+article h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.875rem;
+  color: #d6d3d1;
+  text-align: center;
+}
+article h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #d6d3d1;
+  text-align: center;
+}
+article ul,
+article ol {
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+article li {
+  margin-bottom: 0.5rem;
+}
+article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 0.5rem;
+}
+article pre {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  background: #27272a;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  overflow-x: auto;
+}
+article code {
+  font-size: 1rem;
+  background: #44403c;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 0.25rem;
+}
+article blockquote {
+  border-left: 4px solid #a8a29e;
+  padding-left: 1rem;
+  font-style: italic;
+  color: #d6d3d1;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+article table {
+  width: 100%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+}
+article th,
+article td {
+  border: 1px solid #52525b;
+  padding: 0.5rem 1rem;
 }

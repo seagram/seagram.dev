@@ -14,13 +14,22 @@ articles.sort((a: any, b: any) => {
 <div class="m-auto max-w-max">
   <ul>
     {
-      articles.map((post: any) => (
-        <li class="p-2">
-          <a href={post.url} class="hover:underline sm:text-base text-sm">
-            {post.frontmatter.title}
-          </a>
-        </li>
-      ))
+      articles.map((post) => {
+        const typedPost = post as {
+          url: string;
+          frontmatter: { title: string };
+        };
+        return (
+          <li class="p-2">
+            <a
+              href={typedPost.url}
+              class="font-garamond hover:underline sm:text-base text-sm"
+            >
+              {typedPost.frontmatter.title}
+            </a>
+          </li>
+        );
+      })
     }
   </ul>
 </div>
