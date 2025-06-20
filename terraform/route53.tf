@@ -27,20 +27,15 @@ resource "aws_route53_record" "alias-record" {
   }
 }
 
-resource "aws_route53_record" "mx_fwd1" {
+resource "aws_route53_record" "mx" {
   zone_id = aws_route53_zone.zone.zone_id
   name    = var.root_domain_name
   type    = "MX"
   ttl     = 300
-  records = ["10 fwd1.porkbun.com"]
-}
-
-resource "aws_route53_record" "mx_fwd2" {
-  zone_id = aws_route53_zone.zone.zone_id
-  name    = var.root_domain_name
-  type    = "MX"
-  ttl     = 300
-  records = ["20 fwd2.porkbun.com"]
+  records = [
+    "10 fwd1.porkbun.com",
+    "20 fwd2.porkbun.com"
+  ]
 }
 
 resource "aws_route53_record" "spf_txt" {
