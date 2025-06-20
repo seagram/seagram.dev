@@ -1,33 +1,30 @@
 ---
 const { active = "about", onSelect } = Astro.props;
-const options = ["about", "writing"];
+const navItems = [
+  { label: "about", href: "/", key: "about" },
+  { label: "writing", href: "/writing", key: "writing" },
+  { label: "stack", href: "/stack", key: "stack" },
+  { label: "contact", href: "/contact", key: "contact" },
+];
 ---
 
-<div class="mt-6 mb-6 text-xl text-center whitespace-nowrap font-sans">
-  <a
-    href="/"
-    class={[
-      "mx-4 px-2 py-1 transition-colors",
-      active === "about"
-        ? "text-stone-300"
-        : active === "article"
-          ? "text-zinc-500 hover:text-stone-300"
-          : "text-zinc-500 hover:text-stone-300",
-    ].join(" ")}
-  >
-    about
-  </a>
-  <a
-    href="/writing"
-    class={[
-      "mx-4 px-2 py-1 transition-colors",
-      active === "writing"
-        ? "text-stone-300"
-        : active === "article"
-          ? "text-zinc-500 hover:text-stone-300"
-          : "text-zinc-500 hover:text-stone-300",
-    ].join(" ")}
-  >
-    writing
-  </a>
+<div
+  class="mt-6 mb-6 text-xl text-center whitespace-nowrap font-sans flex flex-wrap justify-center gap-x-2 gap-y-2 sm:gap-x-4"
+>
+  {
+    navItems.map(({ label, href, key }) => (
+      <a
+        href={href}
+        class={[
+          "px-2 py-1 transition-colors",
+          "text-base sm:text-xl",
+          active === key
+            ? "text-stone-300"
+            : "text-zinc-500 hover:text-stone-300",
+        ].join(" ")}
+      >
+        {label}
+      </a>
+    ))
+  }
 </div>

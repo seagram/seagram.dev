@@ -1,0 +1,62 @@
+---
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+import NavBar from "../components/NavBar.astro";
+import FontPreloadLinks from "../components/FontPreloadLinks.astro";
+---
+
+<html lang="en" class="bg-zinc-900 text-stone-300">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.ico" />
+    <FontPreloadLinks />
+    <title>seagram.dev</title>
+  </head>
+  <body>
+    <ClientRouter />
+    <h1 class="font-special text-4xl mt-8 mb-6 text-center whitespace-nowrap">
+      cal seagram
+    </h1>
+    <NavBar active="stack" />
+    <div class="mt-8 flex justify-center">
+      <div class="max-w-max text-center">
+        <p class="mb-2 text-xl text-center">languages</p>
+        <div class="grid grid-cols-3 gap-x-6 gap-y-2 text-center">
+          <div>bash</div>
+          <div>golang</div>
+          <div>lua</div>
+          <div>python</div>
+          <div>typescript</div>
+          <div>astro</div>
+        </div>
+        <p class="mt-2 mb-10 text-sm text-zinc-500">*and spanish</p>
+        <p class="mb-2 text-xl text-center">systems</p>
+        <div class="grid grid-cols-3 gap-x-6 gap-y-2 text-center mb-8">
+          <div>aws</div>
+          <div>postgres</div>
+          <div>docker</div>
+          <div>ansible</div>
+          <div>terraform</div>
+          <div>gh actions</div>
+        </div>
+        <p class="mb-2 mt-10 text-xl text-center">this website</p>
+        <div class="grid grid-cols-3 gap-x-6 gap-y-2 text-center mb-10">
+          <div>route53</div>
+          <div>cloudfront</div>
+          <div>s3</div>
+          <div>acm</div>
+          <div>porkbun</div>
+          <div>posthog</div>
+        </div>
+        <p class="mb-2 mt-10 text-xl text-center">next up</p>
+        <div class="grid grid-cols-3 gap-x-6 gap-y-2 text-center mb-10">
+          <div>zig</div>
+          <div>bun</div>
+          <div>htmx</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -26,3 +26,27 @@ resource "aws_route53_record" "alias-record" {
     evaluate_target_health = false
   }
 }
+
+resource "aws_route53_record" "mx_fwd1" {
+  zone_id = aws_route53_zone.zone.zone_id
+  name    = var.root_domain_name
+  type    = "MX"
+  ttl     = 300
+  records = ["10 fwd1.porkbun.com"]
+}
+
+resource "aws_route53_record" "mx_fwd2" {
+  zone_id = aws_route53_zone.zone.zone_id
+  name    = var.root_domain_name
+  type    = "MX"
+  ttl     = 300
+  records = ["20 fwd2.porkbun.com"]
+}
+
+resource "aws_route53_record" "spf_txt" {
+  zone_id = aws_route53_zone.zone.zone_id
+  name    = var.root_domain_name
+  type    = "TXT"
+  ttl     = 300
+  records = ["v=spf1 mx include:_spf.porkbun.com ~all"]
+}
