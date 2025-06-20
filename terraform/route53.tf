@@ -27,6 +27,15 @@ resource "aws_route53_record" "alias-record" {
   }
 }
 
+resource "aws_route53_record" "spf_txt" {
+  zone_id = aws_route53_zone.zone.zone_id
+  name    = var.root_domain_name
+  type    = "TXT"
+  ttl     = 300
+  records = ["v=spf1 mx include:_spf.porkbun.com ~all"]
+}
+
+/*
 resource "aws_route53_record" "mx" {
   zone_id = aws_route53_zone.zone.zone_id
   name    = var.root_domain_name
@@ -37,11 +46,4 @@ resource "aws_route53_record" "mx" {
     "20 fwd2.porkbun.com"
   ]
 }
-
-resource "aws_route53_record" "spf_txt" {
-  zone_id = aws_route53_zone.zone.zone_id
-  name    = var.root_domain_name
-  type    = "TXT"
-  ttl     = 300
-  records = ["v=spf1 mx include:_spf.porkbun.com ~all"]
-}
+*/
