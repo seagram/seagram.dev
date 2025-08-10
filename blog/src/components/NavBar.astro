@@ -1,0 +1,38 @@
+---
+const {
+  active = "about",
+  onSelect,
+  class: additionalClasses = "",
+} = Astro.props;
+const navItems = [
+  { label: "about", href: "/", key: "about" },
+  { label: "blog", href: "/blog", key: "blog" },
+  { label: "contact", href: "/contact", key: "contact" },
+];
+---
+
+<h1
+  class="font-special text-stone-300 text-4xl mt-8 mb-6 text-center whitespace-nowrap"
+>
+  cal seagram
+</h1>
+<div
+  class={`font-special mt-6 mb-6 text-center whitespace-nowrap flex flex-wrap justify-center gap-x-2 gap-y-2 sm:gap-x-4 ${additionalClasses}`}
+>
+  {
+    navItems.map(({ label, href, key }) => (
+      <a
+        href={href}
+        class={[
+          "px-2 transition-colors",
+          "text-2xl sm:text-xl",
+          active === key
+            ? "text-stone-300"
+            : "text-zinc-500 hover:text-stone-300",
+        ].join(" ")}
+      >
+        {label}
+      </a>
+    ))
+  }
+</div>

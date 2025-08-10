@@ -6,14 +6,6 @@ on:
       - main
   workflow_dispatch:
 
-env:
-  PORKBUN_API_KEY: ${{ secrets.PORKBUN_API_KEY }}
-  PORKBUN_SECRET_API_KEY: ${{ secrets.PORKBUN_SECRET_API_KEY }}
-  BUDGET_NOTIFICATION_EMAIL: ${{ secrets.BUDGET_NOTIFICATION_EMAIL }}
-  aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  TF_API_TOKEN: "${{ secrets.TERRAFORM_LOGIN_KEY }}"
-
 jobs:
   terraform:
     name: "Terraform"
@@ -31,25 +23,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/seagram-dev-github-actions-role
+          role-session-name: github-actions
           aws-region: us-east-1
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: 1.10.5
-          cli_config_credentials_token: ${{ secrets.TERRAFORM_LOGIN_KEY }}
 
       - name: Terraform Init
-        run: |
-          export porkbun_api_key=$PORKBUN_API_KEY
-          export porkbun_secret_api_key=$PORKBUN_SECRET_API_KEY
-          export budget_notification_email=$BUDGET_NOTIFICATION_EMAIL
-          terraform init -input=false
+        run: terraform init -input=false
         working-directory: ./terraform
 
       - name: Terraform Validate
@@ -95,11 +82,18 @@ jobs:
         with:
           node-version: 21
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10.13.1
+
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
+        working-directory: ./blog
 
       - name: Build
-        run: npm run build
+        run: pnpm run build
+        working-directory: ./blog
 
       - name: Upload dist folder
         uses: actions/upload-artifact@v4
@@ -125,8 +119,8 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/seagram-dev-github-actions-role
+          role-session-name: github-actions
           aws-region: us-east-1
 
       - name: Sync to S3

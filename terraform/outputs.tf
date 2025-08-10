@@ -1,11 +1,11 @@
 output "bucket_url" {
-  value = "s3://${aws_s3_bucket.bucket.id}"
+  value = "s3://${module.s3.bucket_id}"
 }
 
 output "website_url" {
-  value = "https://${var.root_domain_name}"
+  value = "https://${local.root_domain_name}"
 }
 
 output "cloudfront_distribution_id" {
-  value = aws_cloudfront_distribution.distribution.id
+  value = module.cloudfront.distribution_id
 }

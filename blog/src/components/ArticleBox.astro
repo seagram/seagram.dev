@@ -1,0 +1,41 @@
+---
+const articles = Object.values(
+  import.meta.glob("../pages/**/*.{md,mdx}", { eager: true })
+).filter((article: any) => {
+  const url = article.url || article.file;
+  return url.includes("/blog/");
+});
+
+articles.sort((a: any, b: any) => {
+  return (
+    new Date(b.frontmatter.date).getTime() -
+    new Date(a.frontmatter.date).getTime()
+  );
+});
+---
+
+<div class="m-auto max-w-max mx-4 sm:mx-auto">
+  <ul>
+    {
+      articles.map((post) => {
+        const typedPost = post as {
+          url: string;
+          frontmatter: { title: string; date: string };
+        };
+        return (
+          <li class="p-2">
+            <a
+              href={typedPost.url}
+              class="hover:text-zinc-500 text-lg transition-colors flex justify-between items-center"
+            >
+              <span>{typedPost.frontmatter.title}</span>
+              <span class="text-zinc-400 text-sm ml-4">
+                {typedPost.frontmatter.date}
+              </span>
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+</div>

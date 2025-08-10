@@ -1,0 +1,22 @@
+---
+import { ClientRouter } from "astro:transitions";
+import NavBar from "../components/NavBar.astro";
+import Head from "../components/Head.astro";
+---
+
+<html lang="en" class="bg-zinc-900 text-stone-300">
+  <Head />
+  <body>
+    <ClientRouter />
+    <NavBar active="about" />
+    <div class="flex justify-center text-lg">
+      <div class="max-w-max text-center">
+        <p>software engineering student in montreal</p>
+        <p>working in DevOps and cloud architecture</p>
+        <p>developing neovim plugins and go-based TUIs</p>
+        <p>deploying a kubernetes homelab cluster</p>
+        <p>into bodybuilding, reading, and jazz</p>
+      </div>
+    </div>
+  </body>
+</html>

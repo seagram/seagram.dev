@@ -1,0 +1,4 @@
+# This is an example terraform.tfvars
+# Copy this to terraform.tfvars and replace with you own variable names
+# bucket_name = "terraform-state-bucket"
+# table_name  = "terraform-locks-table"

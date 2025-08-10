@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket         = "seagram-terraform-state-bucket"
-    key            = "seagram-dev/terraform.tfstate"
+    key            = "bootstrap/terraform.tfstate"
     region         = "us-east-1"
     dynamodb_table = "seagram-terraform-locks-table"
     encrypt        = true
@@ -11,26 +11,16 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 6.0"
     }
-    porkbun = {
-      source  = "kyswtn/porkbun"
-      version = "0.1.3"
-    }
   }
 }
 
 provider "aws" {
-  region = "us-east-1"
   default_tags {
     tags = {
-      Project    = "seagram.dev"
+      Project    = "bootstrap"
       Owner      = "cal-seagram"
       CostCenter = "personal"
       CreatedBy  = "terraform"
     }
   }
-}
-
-provider "porkbun" {
-  api_key        = local.porkbun_api_key
-  secret_api_key     = local.porkbun_secret_api_key
 }
