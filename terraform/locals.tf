@@ -1,9 +1,17 @@
+data "aws_secretsmanager_secret" "porkbun_api_key" {
+  name = "seagram-dev/porkbun_api_key"
+}
+
+data "aws_secretsmanager_secret" "porkbun_secret_api_key" {
+  name = "seagram-dev/porkbun_secret_api_key"
+}
+
 data "aws_secretsmanager_secret_version" "porkbun_api_key" {
-  secret_id = "seagram-dev/porkbun_api_key"
+  secret_id = data.aws_secretsmanager_secret.porkbun_api_key.id
 }
 
 data "aws_secretsmanager_secret_version" "porkbun_secret_api_key" {
-  secret_id = "seagram-dev/porkbun_secret_api_key"
+  secret_id = data.aws_secretsmanager_secret.porkbun_secret_api_key.id
 }
 
 locals {
