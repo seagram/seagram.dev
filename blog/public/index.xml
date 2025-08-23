@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>seagram.dev</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on seagram.dev</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 20 Aug 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Favourite Python Libraries</title>
+      <link>http://localhost:1313/blog/python-libraries/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/python-libraries/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>First</title>
+      <link>http://localhost:1313/blog/first/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/first/</guid>
+      <description>&lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;&#xA;&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;&#xA;&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;&#xA;&lt;p&gt;This is a paragraph.&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;This is inline code&lt;/code&gt;&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-py&#34; data-lang=&#34;py&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hello_world&lt;/span&gt;() &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; str:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello World!&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Optmizing Docker Images</title>
+      <link>http://localhost:1313/blog/optimizing-docker/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/optimizing-docker/</guid>
+      <description>&lt;p&gt;Show most common used docker images&#xA;Show simple example project&#xA;Show step by step reduction&#xA;Show cost savings on AWS&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Reducing Terraform variable boilerplate</title>
+      <link>http://localhost:1313/blog/terraform-variables/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/terraform-variables/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Scripting with UV and Python</title>
+      <link>http://localhost:1313/blog/uv-python-scripting/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/uv-python-scripting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Types in Python</title>
+      <link>http://localhost:1313/blog/python-typing/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/python-typing/</guid>
+      <description>&lt;p&gt;Explore different solutions&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Using OIDC Provider in GitHub Actions</title>
+      <link>http://localhost:1313/blog/oidc-cicd/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/oidc-cicd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Using S3 as state backend</title>
+      <link>http://localhost:1313/blog/terraform-s3-backend/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/terraform-s3-backend/</guid>
+      <description>&lt;p&gt;Explain old way&lt;/p&gt;&#xA;&lt;p&gt;Show new way&lt;/p&gt;&#xA;&lt;p&gt;Explain details of new way&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;AWS S3 COnditional Writes&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>When random isn&#39;t random enough</title>
+      <link>http://localhost:1313/blog/random-isnt-random/</link>
+      <pubDate>Wed, 20 Aug 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/random-isnt-random/</guid>
+      <description>&lt;p&gt;In 2005, Steve Jobs unvailed the first iPod nano. Alongside it, Apple introduced some new features to iTunes. One of which was &amp;ldquo;Smart Shuffle&amp;rdquo;. Apple&amp;rsquo;s solution to a common iTunes complaint: the &amp;ldquo;shuffle&amp;rdquo; mode isn&amp;rsquo;t random enough. Users noticed the mode often played the same artist (or even album) back-to-back-to-back. The fix was an algorithm that weighted certain metrics like the last artist played to determine which song to play next. The result was an experience that seemed more random while mathetmatically being much less so. But users loved it. So much so, Apple adopted this Smart Shuffle as the new default shuffle mode. 20 years later and the shuffle in Apple Music uses an weighted algorithm just like before.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

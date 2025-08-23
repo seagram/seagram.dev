@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-transition" content="same-origin" />
+    <link rel="icon" type="image/x-icon" href="http://localhost:1313/favicon.ico" />
+    <link rel="preload" href="http://localhost:1313/crimson-pro.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="http://localhost:1313/special-elite.woff2" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://localhost:1313/style.css"
+    />
+    <title>seagram.dev</title>
+  </head>
+  <body>
+  <nav>
+  <h1>cal seagram</h1>
+  <div class="nav-links">
+    <a href="/" >about</a>
+    <a href="/blog/" >blog</a>
+    <a href="/contact/" >contact</a>
+  </div>
+</nav>
+    <div> When random isn&#39;t random enough August 20, 2025 <p>In 2005, Steve Jobs unvailed the first iPod nano. Alongside it, Apple introduced some new features to iTunes. One of which was &ldquo;Smart Shuffle&rdquo;. Apple&rsquo;s solution to a common iTunes complaint: the &ldquo;shuffle&rdquo; mode isn&rsquo;t random enough. Users noticed the mode often played the same artist (or even album) back-to-back-to-back. The fix was an algorithm that weighted certain metrics like the last artist played to determine which song to play next. The result was an experience that seemed more random while mathetmatically being much less so. But users loved it. So much so, Apple adopted this Smart Shuffle as the new default shuffle mode. 20 years later and the shuffle in Apple Music uses an weighted algorithm just like before.</p>
+<p>But why? Why does something <em>less</em> random <em>feel</em> more random? One reason could be the Gambler&rsquo;s fallacy.
+Imagine you&rsquo;re at the casino playing roulette. The last 5 rounds have all fell red. Huh? I guess the next round must fall black. I mean, what are the chances of <em>6</em> reds in a row? Well, the same as 5 reds and 1 black. Each round is an independent of each other and both red and black have even odds of 48.65%.</p>
+<p>But we&rsquo;re humans. We identify patterns in complete random things. From those patterns, we theorize certain outcomes are destined to happen. That&rsquo;s the Grambler&rsquo;s fallacy. When playing our music on shuffle, we don&rsquo;t take notice of different artist playing after each other. It&rsquo;s only when the same artist is played again that we raise an eyebrow. Yet both events are equally likely to happen in a purely random algorithm.</p>
+<p>Let&rsquo;s go back to roulette. In 1913, a game of roulette at the Monte Carlo Casino fell black 26 times in a row. That&rsquo;s rididiculous. Even more so when you consider the odds. 1 in 68.4 million. Legend says gamblers kept betting against black. Millions of francs were lost. All because of the Gambler&rsquo;s fallacy.</p>
+<p>The list of examples go on. Baseball umpires are 1.3% less likely to call a strike if the previous two balls were strikes as well. Loan officers are 8% less likely to approve a loan if they approved their last client. Put simply, it&rsquo;s the law of small numbers. We deluded ourselves into belive a small sample group is representative of the greater whole. Yes, the odds of flipping a coin heads is 1/2. &hellip;</p>
+ </div>
+    <script>
+      if (document.startViewTransition) {
+        document.addEventListener('click', (e) => {
+          const link = e.target.closest('a');
+          if (!link) return;
+          if (link.origin !== location.origin) return;
+          if (link.target === '_blank') return;
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          navigateWithTransition(link.href);
+        });
+        window.addEventListener('popstate', () => {
+          navigateWithTransition(location.href, false);
+        });
+        
+        async function navigateWithTransition(url, updateHistory = true) {
+          const transition = document.startViewTransition(async () => {
+            try {
+              const response = await fetch(url);
+              if (!response.ok) throw new Error('Failed to fetch page');
+              
+              const html = await response.text();
+              const parser = new DOMParser();
+              const newDoc = parser.parseFromString(html, 'text/html');
+              document.title = newDoc.title;
+              const newContent = newDoc.querySelector('#content');
+              const currentContent = document.querySelector('#content');
+              if (newContent && currentContent) {
+                currentContent.innerHTML = newContent.innerHTML;
+              }
+              updateNavigation(url);
+              if (updateHistory) {
+                history.pushState(null, '', url);
+              }
+              
+            } catch (error) {
+              console.error('Navigation failed:', error);
+              window.location.href = url;
+            }
+          });
+          
+          return transition;
+        }
+        
+        function updateNavigation(url) {
+          const urlPath = new URL(url).pathname;
+          const navLinks = document.querySelectorAll('nav a');
+          
+          navLinks.forEach(link => {
+            const linkPath = new URL(link.href).pathname;
+            const isActive = (urlPath === linkPath);
+            
+            if (isActive) {
+              link.classList.add('active');
+              link.setAttribute('aria-current', 'page');
+            } else {
+              link.classList.remove('active');
+              link.removeAttribute('aria-current');
+            }
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div id="blog">
+  <ul>
+    {{ range .Pages.ByPublishDate.Reverse }}
+    <li>
+      <a href="{{ .RelPermalink }}" class="blog-link">
+        <span class="blog-title">{{ .Title }}</span>
+        <span class="blog-date"
+          >{{ .PublishDate.Format "January 2, 2006"}}</span
+        >
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}

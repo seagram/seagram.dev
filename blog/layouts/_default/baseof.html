@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="view-transition" content="same-origin" />
+    <link rel="icon" type="image/x-icon" href="{{ absURL `favicon.ico` }}" />
+    <link rel="preload" href="{{ absURL `crimson-pro.woff2` }}" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="{{ absURL `special-elite.woff2` }}" as="font" type="font/woff2" crossorigin />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ absURL `style.css` }}"
+    />
+    <title>seagram.dev</title>
+  </head>
+  <body>
+  <nav>
+  <h1>cal seagram</h1>
+  <div class="nav-links">
+    <a href="/" {{ if eq .Section "" }}class="active" aria-current="page"{{ end }}>about</a>
+    <a href="/blog/" {{ if and (eq .Section "blog") (eq .Kind "section") }}class="active" aria-current="page"{{ end }}>blog</a>
+    <a href="/contact/" {{ if eq .Section "contact" }}class="active" aria-current="page"{{ end }}>contact</a>
+  </div>
+</nav>
+    <div>{{- block "main" . }}{{- end }}</div>
+    <script>
+      if (document.startViewTransition) {
+        document.addEventListener('click', (e) => {
+          const link = e.target.closest('a');
+          if (!link) return;
+          if (link.origin !== location.origin) return;
+          if (link.target === '_blank') return;
+          if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+          e.preventDefault();
+          navigateWithTransition(link.href);
+        });
+        window.addEventListener('popstate', () => {
+          navigateWithTransition(location.href, false);
+        });
+        
+        async function navigateWithTransition(url, updateHistory = true) {
+          const transition = document.startViewTransition(async () => {
+            try {
+              const response = await fetch(url);
+              if (!response.ok) throw new Error('Failed to fetch page');
+              
+              const html = await response.text();
+              const parser = new DOMParser();
+              const newDoc = parser.parseFromString(html, 'text/html');
+              document.title = newDoc.title;
+              const newContent = newDoc.querySelector('#content');
+              const currentContent = document.querySelector('#content');
+              if (newContent && currentContent) {
+                currentContent.innerHTML = newContent.innerHTML;
+              }
+              updateNavigation(url);
+              if (updateHistory) {
+                history.pushState(null, '', url);
+              }
+              
+            } catch (error) {
+              console.error('Navigation failed:', error);
+              window.location.href = url;
+            }
+          });
+          
+          return transition;
+        }
+        
+        function updateNavigation(url) {
+          const urlPath = new URL(url).pathname;
+          const navLinks = document.querySelectorAll('nav a');
+          
+          navLinks.forEach(link => {
+            const linkPath = new URL(link.href).pathname;
+            const isActive = (urlPath === linkPath);
+            
+            if (isActive) {
+              link.classList.add('active');
+              link.setAttribute('aria-current', 'page');
+            } else {
+              link.classList.remove('active');
+              link.removeAttribute('aria-current');
+            }
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
