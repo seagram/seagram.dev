@@ -55,11 +55,13 @@ jobs:
           terraform_version: 1.10.5
           terraform_wrapper: false
 
-      - name: Create backend.conf
-        run: echo "${{ secrets.BACKEND_CONF }}" > backend.conf
-
       - name: Terraform Init
-        run: terraform init -input=false -backend-config=backend.conf
+        run: |
+          terraform init -input=false \
+            -backend-config="bucket=${{ secrets.TF_STATE_BUCKET }}" \
+            -backend-config="key=${{ secrets.TF_STATE_KEY }}" \
+            -backend-config="region=${{ secrets.AWS_REGION }}" \
+            -backend-config="use_lockfile=true"
 
       - name: Get Outputs
         id: outputs
