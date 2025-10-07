@@ -62,7 +62,13 @@ jobs:
       - name: Terraform Plan
         id: plan
         run: |
-          terraform plan -input=false -out=tfplan
+          terraform plan -input=false -out=tfplan \
+            -var="aws_region=${{ secrets.AWS_REGION }}" \
+            -var="root_domain_name=${{ secrets.ROOT_DOMAIN_NAME }}" \
+            -var="domain_aliases=${{ secrets.DOMAIN_ALIASES }}" \
+            -var="bucket_name=${{ secrets.BUCKET_NAME }}" \
+            -var="porkbun_api_key=${{ secrets.PORKBUN_API_KEY }}" \
+            -var="porkbun_secret_api_key=${{ secrets.PORKBUN_SECRET_API_KEY }}"
           echo "changes=$(terraform show -json tfplan | jq -r '.resource_changes | length')" >> "$GITHUB_OUTPUT"
         continue-on-error: false
         timeout-minutes: 5
