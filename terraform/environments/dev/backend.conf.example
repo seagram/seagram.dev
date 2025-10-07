@@ -1,0 +1,11 @@
+bucket       = ""
+key          = ""
+region       = ""
+use_lockfile = true
+
+# optional if using DynamoDB for state locking
+# dynamodb_table = ""
+
+# optional if using encryption
+# encrypt = true
+# kms_key_id = ""

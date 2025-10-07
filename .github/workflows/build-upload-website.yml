@@ -1,0 +1,137 @@
+name: "Build and Upload Website"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "website/**"
+      - ".github/workflows/build-upload-website.yml"
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Deploy Infrastructure"]
+    types:
+      - completed
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  TF_ENVIRONMENT: prod
+
+jobs:
+  get-terraform-outputs:
+    name: "Get Terraform Outputs"
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./terraform/environments/${{ env.TF_ENVIRONMENT }}
+
+    outputs:
+      bucket_url: ${{ steps.outputs.outputs.bucket_url }}
+      website_url: ${{ steps.outputs.outputs.website_url }}
+      cloudfront_distribution_id: ${{ steps.outputs.outputs.cloudfront_distribution_id }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/seagram-dev-github-actions-role
+          role-session-name: github-actions
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.10.5
+          terraform_wrapper: false
+
+      - name: Create backend.conf
+        run: echo "${{ secrets.BACKEND_CONF }}" > backend.conf
+
+      - name: Terraform Init
+        run: terraform init -input=false -backend-config=backend.conf
+
+      - name: Get Outputs
+        id: outputs
+        run: |
+          echo "bucket_url=$(terraform output -raw bucket_url)" >> "$GITHUB_OUTPUT"
+          echo "website_url=$(terraform output -raw website_url)" >> "$GITHUB_OUTPUT"
+          echo "cloudfront_distribution_id=$(terraform output -raw cloudfront_distribution_id)" >> "$GITHUB_OUTPUT"
+
+  build:
+    name: "Build"
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./website
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install Dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build
+        run: bun --bun astro build
+
+      - name: Upload dist folder
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: website/dist
+          retention-days: 1
+
+  publish:
+    needs: [get-terraform-outputs, build]
+    name: "Publish"
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
+
+    steps:
+      - name: Download dist folder
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/seagram-dev-github-actions-role
+          role-session-name: github-actions
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Sync to S3
+        run: aws s3 sync dist/ ${{ needs.get-terraform-outputs.outputs.bucket_url }} --delete
+
+      - name: Invalidate CloudFront
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id ${{ needs.get-terraform-outputs.outputs.cloudfront_distribution_id }} \
+            --paths "/*"
+
+      - name: Deployment Summary
+        run: |
+          echo "## Deployment Complete." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Website URL:** ${{ needs.get-terraform-outputs.outputs.website_url }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Environment:** ${{ env.TF_ENVIRONMENT }}" >> $GITHUB_STEP_SUMMARY

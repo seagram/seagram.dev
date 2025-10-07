@@ -1,0 +1,91 @@
+name: "Deploy Infrastructure"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "terraform/**"
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  contents: read
+
+env:
+  TF_ENVIRONMENT: prod
+
+jobs:
+  terraform:
+    name: "Terraform"
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./terraform/environments/${{ env.TF_ENVIRONMENT }}
+
+    outputs:
+      bucket_url: ${{ steps.bucket.outputs.BUCKET_URL }}
+      website_url: ${{ steps.website.outputs.WEBSITE_URL }}
+      cloudfront_distribution_id: ${{ steps.cloudfront.outputs.CLOUDFRONT_DISTRIBUTION_ID }}
+      terraform_changes: ${{ steps.plan.outputs.changes }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/seagram-dev-github-actions-role
+          role-session-name: github-actions
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: 1.10.5
+          terraform_wrapper: false
+
+      - name: Create backend.conf
+        run: echo "${{ secrets.BACKEND_CONF }}" > backend.conf
+
+      - name: Terraform Init
+        run: terraform init -input=false -backend-config=backend.conf
+
+      - name: Terraform Validate
+        run: terraform validate
+
+      - name: Terraform Plan
+        id: plan
+        run: |
+          terraform plan -input=false -out=tfplan
+          echo "changes=$(terraform show -json tfplan | jq -r '.resource_changes | length')" >> "$GITHUB_OUTPUT"
+        continue-on-error: false
+        timeout-minutes: 5
+
+      - name: Show Terraform Plan
+        run: |
+          if [ "${{ steps.plan.outputs.changes }}" = "0" ]; then
+            echo "'terraform plan' found no changes. Skipping 'terraform apply'..."
+          else
+            echo "${{ steps.plan.outputs.changes }} changes detected in 'terraform plan'"
+            terraform show tfplan
+          fi
+
+      - name: Terraform Apply
+        if: steps.plan.outputs.changes != '0'
+        run: terraform apply -auto-approve tfplan
+
+      - name: Set Bucket URL
+        id: bucket
+        run: echo "BUCKET_URL=$(terraform output -raw bucket_url)" >> "$GITHUB_OUTPUT"
+
+      - name: Set Website URL
+        id: website
+        run: echo "WEBSITE_URL=$(terraform output -raw website_url)" >> "$GITHUB_OUTPUT"
+
+      - name: Set CloudFront Distribution ID
+        id: cloudfront
+        run: echo "CLOUDFRONT_DISTRIBUTION_ID=$(terraform output -raw cloudfront_distribution_id)" >> "$GITHUB_OUTPUT"

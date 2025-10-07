@@ -7,13 +7,20 @@
 .terraform/
 */.terraform.lock.hcl
 
+**/backend.conf
+
+**/*.auto.tfvars
+
 node_modules
 dist
 
 *.bak
 *.tfvars
 
-TODO.md
+*.md
+!README.md
+!website/src/pages/blog/*.md
 .astro
 **/.env
 **/drafts/
+Justfile
