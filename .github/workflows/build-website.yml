@@ -1,4 +1,4 @@
-name: "Build and Upload Website"
+name: "Build Website"
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - "website/**"
-      - ".github/workflows/build-upload-website.yml"
+      - ".github/workflows/build-website.yml"
   workflow_dispatch:
   workflow_run:
     workflows: ["Deploy Infrastructure"]
