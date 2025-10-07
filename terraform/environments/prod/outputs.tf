@@ -6,6 +6,10 @@ output "cloudfront_distribution_id" {
   value       = module.cloudfront.distribution_id
 }
 
+output "bucket_url" {
+  value       = "s3://${module.s3.bucket_id}"
+}
+
 output "s3_bucket_name" {
   value       = module.s3.bucket_id
 }
