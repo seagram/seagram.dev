@@ -45,12 +45,10 @@ module "secrets" {
   
   secrets = {
     porkbun_api_key = {
-      value       = var.porkbun_api_key
-      description = "Porkbun API Key"
+      value = var.porkbun_api_key
     }
     porkbun_secret_api_key = {
-      value       = var.porkbun_secret_api_key
-      description = "Porkbun Secret API Key"
+      value = var.porkbun_secret_api_key
     }
   }
 }

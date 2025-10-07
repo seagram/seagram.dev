@@ -7,7 +7,7 @@ output "cloudfront_distribution_id" {
 }
 
 output "s3_bucket_name" {
-  value       = module.s3_bucket.bucket_id
+  value       = module.s3.bucket_id
 }
 
 output "route53_zone_id" {
