@@ -45,5 +45,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/
-          git diff --staged --quiet || git commit -m "chore: update architecture diagrams
+          git diff --staged --quiet || git commit -m "chore: update architecture diagrams"
           git push
