@@ -1,0 +1,21 @@
+---
+import Head from "../components/Head.astro";
+import NavBar from "../components/NavBar.astro";
+import { ClientRouter } from "astro:transitions";
+
+const { active } = Astro.props;
+---
+
+<html lang="en" class="bg-zinc-900 text-stone-300">
+  <Head />
+  <body>
+    <ClientRouter />
+    <div class="max-w-[42rem] mx-auto px-6 sm:px-0">
+      <NavBar active={active} />
+      <hr class="mt-4 mb-4 border-zinc-700" />
+      <main>
+        <slot />
+      </main>
+    </div>
+  </body>
+</html>

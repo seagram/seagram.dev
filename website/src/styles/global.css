@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@font-face {
+  font-display: swap;
+  font-family: "Special Elite";
+  font-weight: normal;
+  font-style: normal;
+  src: url("/fonts/Special-Elite.woff2") format("woff2");
+  unicode-range: U+0020, U+0061-0063, U+0065, U+0067, U+006C-006E, U+006F,
+    U+0072-0075;
+}
+
+@theme {
+  --font-sans: Georgia, "Times New Roman", Times, serif;
+  --font-special: "Special Elite", monospace;
+}
