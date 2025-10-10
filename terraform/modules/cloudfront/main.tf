@@ -32,6 +32,16 @@ resource "aws_cloudfront_distribution" "distribution" {
     viewer_protocol_policy = "redirect-to-https"
   }
 
+  # Standard access logs (free, stored in S3)
+  dynamic "logging_config" {
+    for_each = var.logging_bucket != "" ? [1] : []
+    content {
+      bucket          = var.logging_bucket
+      prefix          = var.logging_prefix
+      include_cookies = false
+    }
+  }
+
   price_class = var.price_class
 
   restrictions {

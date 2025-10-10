@@ -1,17 +1,35 @@
 ---
-import Head from "../components/Head.astro";
-import NavBar from "../components/NavBar.astro";
+import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 
 const { active } = Astro.props;
 ---
 
 <html lang="en" class="bg-zinc-900 text-stone-300">
-  <Head />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.ico" />
+    <link
+      rel="preload"
+      href="/fonts/Special-Elite.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <title>seagram.dev</title>
+  </head>
   <body>
     <ClientRouter />
     <div class="max-w-[42rem] mx-auto px-6 sm:px-0">
-      <NavBar active={active} />
+      <div class={`max-w-3xl mx-auto px-6 sm:px-0`}>
+        <nav class="flex justify-between items-baseline mt-6">
+          <h1 class="font-special text-stone-300 text-4xl whitespace-nowrap">
+            cal seagram
+          </h1>
+        </nav>
+      </div>
       <hr class="mt-4 mb-4 border-zinc-700" />
       <main>
         <slot />

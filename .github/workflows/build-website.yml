@@ -8,12 +8,6 @@ on:
       - "website/**"
       - ".github/workflows/build-website.yml"
   workflow_dispatch:
-  workflow_run:
-    workflows: ["Deploy Infrastructure"]
-    types:
-      - completed
-    branches:
-      - main
 
 permissions:
   id-token: write
@@ -26,7 +20,6 @@ jobs:
   get-terraform-outputs:
     name: "Get Terraform Outputs"
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
 
     defaults:
       run:
@@ -73,7 +66,6 @@ jobs:
   build:
     name: "Build"
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
 
     defaults:
       run:
@@ -106,7 +98,6 @@ jobs:
     needs: [get-terraform-outputs, build]
     name: "Publish"
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
 
     steps:
       - name: Download dist folder

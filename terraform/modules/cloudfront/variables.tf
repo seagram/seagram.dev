@@ -24,3 +24,15 @@ variable "price_class" {
   type        = string
   default     = "PriceClass_All"
 }
+
+variable "logging_bucket" {
+  type        = string
+  description = "S3 bucket domain name for CloudFront access logs (e.g., bucket-name.s3.amazonaws.com)"
+  default     = ""
+}
+
+variable "logging_prefix" {
+  type        = string
+  description = "Prefix for CloudFront log files in S3"
+  default     = "cloudfront-logs/"
+}

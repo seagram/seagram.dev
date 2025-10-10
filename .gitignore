@@ -1,27 +1,23 @@
-.DS_Store
-**/.DS_Store
-
-**/.terraform/*
+# terraform
+**/.terraform/
+*.tfvars
 *.tfstate
-*.tfstate.*
-.terraform/
 */.terraform.lock.hcl
+!**/tags.auto.tfvars
 
-**/backend.conf
-
-**/*.auto.tfvars
-
+# astro
 node_modules
 dist
+.astro
 
+# python
+**/.env
+**/.venv/
+
+# macos
+**/.DS_Store
+
+# general
 *.bak
-*.tfvars
-
 *.md
 !README.md
-!website/src/pages/blog/*.md
-.astro
-**/.env
-**/drafts/
-Justfile
-.secrets

@@ -10,7 +10,7 @@ const { href, underline = false, class: className = "", ...rest } = Astro.props;
 const isExternal = href.startsWith("http") || href.startsWith("//");
 
 const baseClasses =
-  "inline-block text-stone-300 hover:text-zinc-500 transition-colors underline decoration-1";
+  "inline-block text-lg text-stone-300 hover:text-zinc-500 transition-colors underline decoration-1";
 const combinedClasses = [baseClasses, className].filter(Boolean).join(" ");
 
 const attributes = {

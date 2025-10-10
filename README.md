@@ -1,18 +1,15 @@
 # [seagram.dev](https://seagram.dev)
 
-Portfolio and blog made with Astro and deployed on AWS.
+Portfolio website made with Astro, TailwindCSS, and Bun.
 
-## Stack
+<p align="center">
+  <img src="docs/assets/architecture.png" alt="Architecture" width="600">
+  <br>
+  <em>Architecture Diagram</em>
+</p>
 
-### Frontend
-
-- **Astro**
-- **TailwindCSS**
-- **Bun**
-
-### Infrastructure
-
-- **S3**
-- **CloudFront**
-- **Route53**
-- **Terraform**
+<p align="center">
+  <img src="docs/assets/cicd.png" alt="CICD" width="600">
+  <br>
+  <em>CI/CD Pipeline</em>
+</p>
