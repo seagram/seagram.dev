@@ -1,5 +1,5 @@
 resource "aws_cloudwatch_dashboard" "analytics" {
-  dashboard_name = "${var.domain_name}-analytics"
+  dashboard_name = replace("${var.domain_name}-analytics", ".", "-")
 
   dashboard_body = jsonencode({
     widgets = [
