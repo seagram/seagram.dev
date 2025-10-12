@@ -14,3 +14,7 @@
   --font-sans: Georgia, "Times New Roman", Times, serif;
   --font-special: "Special Elite", monospace;
 }
+
+a.link {
+  @apply text-stone-300 hover:text-zinc-500 transition-colors underline decoration-1;
+}
