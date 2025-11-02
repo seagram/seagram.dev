@@ -2,6 +2,7 @@ locals {
   root_domain_name = "seagram.dev"
   domain_aliases   = ["www.seagram.dev"]
   bucket_name      = "seagram.dev-website"
+  project_name     = "seagram-dev"
 }
 
 module "route53_zone" {
@@ -51,4 +52,20 @@ module "cloudwatch" {
   domain_name                = local.root_domain_name
   environment                = "prod"
   cloudfront_distribution_id = module.cloudfront.distribution_id
+}
+
+module "sns" {
+  source = "../../modules/sns"
+
+  project_name = local.project_name
+  alert_email  = var.budget_alert_email
+}
+
+module "budgets" {
+  source = "../../modules/budgets"
+
+  project_name         = local.project_name
+  monthly_budget_limit = var.monthly_budget_limit
+  alarm_threshold      = var.budget_alarm_threshold
+  sns_topic_arn        = module.sns.topic_arn
 }

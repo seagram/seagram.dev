@@ -31,3 +31,18 @@ output "cloudwatch_dashboard_name" {
   value       = module.cloudwatch.dashboard_name
   description = "Name of the CloudWatch dashboard"
 }
+
+output "budget_alert_topic_arn" {
+  value       = module.sns.topic_arn
+  description = "ARN of the SNS topic for budget alerts"
+}
+
+output "budget_name" {
+  value       = module.budgets.budget_name
+  description = "Name of the AWS Budget monitoring costs"
+}
+
+output "billing_alarm_arn" {
+  value       = module.budgets.alarm_arn
+  description = "ARN of the CloudWatch billing alarm"
+}
