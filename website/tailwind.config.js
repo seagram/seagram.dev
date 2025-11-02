@@ -3,8 +3,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Georgia", "Times New Roman", "Times", "serif"],
-        special: ["Special Elite", "monospace"],
+        sans: ["Arial", "Helvetica", "sans-serif"],
+        special: ["Arial", "Helvetica", "sans-serif"],
       },
     },
   },
