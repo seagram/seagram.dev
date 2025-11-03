@@ -20,4 +20,5 @@ dist
 # general
 *.bak
 *.md
+!website/**/*.md
 !README.md
