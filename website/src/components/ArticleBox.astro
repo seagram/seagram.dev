@@ -1,0 +1,60 @@
+---
+import RSSButton from "./RSSButton.astro";
+
+const articles = Object.values(
+  import.meta.glob("../pages/blog/**/*.{md,mdx}", { eager: true })
+);
+
+articles.sort((a: any, b: any) => {
+  return (
+    new Date(b.frontmatter.pubDate).getTime() -
+    new Date(a.frontmatter.pubDate).getTime()
+  );
+});
+---
+
+<div
+  style="width: 100%; max-width: 800px; padding: 20px; margin-top: 20px; margin-bottom: 20px; background-color: white; border: 2px solid #3A5998; font-size: 16px; box-sizing: border-box; text-align: left;"
+>
+  <div
+    style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;"
+  >
+    <h2 style="margin: 0; font-size: 20px; font-weight: bold;">Archive</h2>
+    <RSSButton />
+  </div>
+  <table width="100%" border="0" cellpadding="5" cellspacing="0">
+    <tbody>
+      {
+        articles.map((post) => {
+          const typedPost = post as {
+            url: string;
+            frontmatter: { title: string; pubDate: string };
+          };
+          const displayDate = new Date(
+            typedPost.frontmatter.pubDate
+          ).toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "long",
+            day: "numeric",
+            timeZone: "UTC",
+          });
+          return (
+            <tr>
+              <td style="font-family: Arial, Helvetica, sans-serif; font-size: 18px; padding: 8px 0; text-align: left;">
+                <a
+                  href={typedPost.url}
+                  style="color: #00F; text-decoration: underline;"
+                >
+                  {typedPost.frontmatter.title}
+                </a>
+                <span style="color: #666; margin-left: 10px;">
+                  ({displayDate})
+                </span>
+              </td>
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
+</div>
