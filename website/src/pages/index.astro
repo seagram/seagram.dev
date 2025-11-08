@@ -1,66 +1,13 @@
 ---
 import "../styles/global.css";
-import Header from "../components/Header.astro";
+import Head from "../components/Head.astro";
 import Body from "../components/Body.astro";
-import ArticleBox from "../components/ArticleBox.astro";
-import Footer from "../components/Footer.astro";
+import About from "../components/About.astro";
 ---
 
-<html lang="en" style="background-color: #EEE;">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicons/favicon.ico" />
-    <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.ico" />
-    <title>seagram.dev</title>
-    <style>
-      /* Responsive styles */
-      @media (max-width: 768px) {
-        table[cellpadding="60"] {
-          display: block !important;
-        }
-
-        table[cellpadding="60"] tbody,
-        table[cellpadding="60"] tr,
-        table[cellpadding="60"] td {
-          display: block !important;
-          width: 100% !important;
-        }
-
-        table[cellpadding="60"] td {
-          padding: 20px !important;
-        }
-
-        main {
-          margin-left: 0 !important;
-        }
-
-        .footer-container {
-          padding: 15px !important;
-        }
-      }
-
-      @media (max-width: 480px) {
-        .footer-container {
-          font-size: 14px !important;
-        }
-      }
-    </style>
-  </head>
-  <body
-    style="margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; background-color: #EEE; -webkit-font-smoothing: none; -moz-osx-font-smoothing: unset; font-smooth: never; text-rendering: optimizeSpeed;"
-  >
-    <center>
-      <Header />
-    </center>
-    <center>
-      <Body />
-    </center>
-    <center>
-      <ArticleBox />
-    </center>
-    <center>
-      <Footer />
-    </center>
-  </body>
+<html lang="en">
+  <Head />
+  <Body>
+    <About />
+  </Body>
 </html>

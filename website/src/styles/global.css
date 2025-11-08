@@ -1,44 +1,43 @@
 @import "tailwindcss";
 
-@font-face {
-  font-display: swap;
-  font-family: "Special Elite";
-  font-weight: normal;
-  font-style: normal;
-  src: url("/fonts/Special-Elite.woff2") format("woff2");
-  unicode-range: U+0020, U+0061-0063, U+0065, U+0067, U+006C-006E, U+006F,
-    U+0072-0075;
-}
-
 @theme {
   --font-sans: Arial, Helvetica, sans-serif;
   --font-special: Arial, Helvetica, sans-serif;
 }
 
+/* Global defaults */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eee;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: unset;
+  font-smooth: never;
+  text-rendering: optimizeSpeed;
+}
+
 a.link {
-  color: #0000EE;
+  color: #0000ee;
   text-decoration: underline;
 }
 
 a.link:visited {
-  color: #551A8B;
+  color: #551a8b;
 }
 
 a.link:hover {
-  color: #0000EE;
+  color: #0000ee;
 }
 
-/* Responsive utilities */
-.container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
+/* Mobile responsiveness */
+@media (max-width: 640px) {
+  body {
+    font-size: 14px;
+  }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 0 10px;
+  .text-lg {
+    font-size: 16px;
   }
 }
